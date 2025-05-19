@@ -1,9 +1,10 @@
 import React from 'react';
+import { FaFacebookF, FaInstagram, FaTwitter } from 'react-icons/fa';
 
 const Footer = () => {
   return (
-    <footer className="bg-[#0d1321] text-white px-10 py-20 mt-10 border-t border-white/20">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10">
+    <footer className="bg-[#0d1321] text-white px-10 pt-20 mt-10 border-t border-white/20">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10 pb-10">
 
         {/* Office Info */}
         <div>
@@ -67,6 +68,27 @@ const Footer = () => {
           </form>
         </div>
 
+      </div>
+
+      {/* Bottom Bar */}
+      <div className="border-t border-white/20 pt-6 mt-6 pb-6">
+        <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between text-sm text-gray-400 gap-4">
+          {/* Left */}
+          <div>© 2025 Solvior. All rights reserved.</div>
+
+          {/* Center - Social Icons */}
+          <div className="flex space-x-4 text-white">
+            <a href="#" className="hover:text-blue-400"><FaFacebookF /></a>
+            <a href="#" className="hover:text-pink-500"><FaInstagram /></a>
+            <a href="#" className="hover:text-blue-300"><FaTwitter /></a>
+          </div>
+
+          {/* Right */}
+          <div className="flex space-x-4">
+            <a href="#" className="hover:text-blue-400">Policy & Privacy</a>
+            <a href="#" className="hover:text-blue-400">Terms & Condition</a>
+          </div>
+        </div>
       </div>
     </footer>
   );
