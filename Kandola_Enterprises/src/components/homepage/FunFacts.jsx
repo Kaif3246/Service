@@ -9,7 +9,7 @@ const FunFacts = () => {
   ];
 
   return (
-    <section className="bg-[#fad1d0] py-20 mt-10">
+    <section className="bg-gray-300 py-20 mt-10">
       <div className="text-center mb-16">
         <p className="text-red-500 text-sm font-semibold tracking-widest">• FUN FACTS •</p>
         <h2 className="text-4xl md:text-5xl font-bold mt-2">Exploring fun tidbits and<br />fascinating facts</h2>

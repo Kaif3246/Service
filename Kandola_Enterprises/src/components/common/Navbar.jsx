@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from "react";
-import { FiChevronDown, FiSearch, FiX } from "react-icons/fi";
+import { FiChevronDown, FiX } from "react-icons/fi";
+import { FaUserAlt } from 'react-icons/fa';
+
+
 import { MdWindow } from "react-icons/md";
 import logo from "../../assets/images/logo.jpg";
 
@@ -27,11 +30,11 @@ const Navbar = () => {
   }, [lastScrollY]);
 
   const navItems = [
-    { name: "Home", dropdown: true },
-    { name: "About Us", dropdown: true },
-    { name: "Our Services", dropdown: true },
-    { name: "Testimonials", dropdown: true },
-    { name: "Contact Us", dropdown: true },
+    { name: "Home", dropdown: false },
+    { name: "About Us", dropdown: false },
+    { name: "Our Services", dropdown: false },
+    { name: "Testimonials", dropdown: false },
+    { name: "Contact Us", dropdown: false },
   ];
 
   return (
@@ -75,11 +78,11 @@ const Navbar = () => {
         {/* Explore + Button Right */}
         <div className="hidden md:flex items-center gap-4 z-10">
           <div className="flex items-center gap-1 cursor-pointer hover:text-red-500">
-            <span>Explore</span>
-            <FiSearch className="text-lg" />
+            <span>Login</span>
+            <FaUserAlt size={20} className="text-gray-700" />
           </div>
           <button className="flex items-center gap-2 border-2 border-white rounded-full px-4 py-1 hover:bg-red-500">
-            ➕ Get in touch
+            ➕ Consult for Business loan
           </button>
         </div>
 
@@ -128,8 +131,9 @@ const Navbar = () => {
 
           {/* Explore + search */}
           <div className="flex items-center gap-2 cursor-pointer hover:text-red-500">
-            <span>Explore</span>
-            <FiSearch className="text-lg" />
+            <span>Login</span>
+            // Use in your component like this:
+            <FaUserAlt size={24} className="text-gray-700" />
           </div>
 
           {/* Get in touch button */}

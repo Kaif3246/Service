@@ -1,47 +1,40 @@
 import React from "react";
-import mainImage from "../../assets/images/hero-bg.jpg";
-import smallImage from "../../assets/images/hero-bg.jpg";
+import mainImage from "../../assets/images/about-bg.jpg";
 import { FaCheck } from "react-icons/fa";
 import { FiArrowRight } from "react-icons/fi";
 
 const OurCompany = () => {
   return (
-    <section className="relative bg-[#fad1d0] pt-32 pb-20 overflow-hidden">
-      {/* Circle Image on Top */}
-      <div className="absolute top-0 left-1/2 transform -translate-x-1/2 z-20">
-        <div className="w-36 h-36 md:w-40 md:h-40 rounded-b-full border-8 border-white border-t-0 shadow-xl overflow-hidden bg-white">
-          <img
-            src={smallImage}
-            alt="Team"
-            className="w-full h-full object-cover rounded-b-full"
-          />
-        </div>
-      </div>
-
+    <section className="relative bg-gray-300 min-h-[95%] flex items-center overflow-hidden pt-32 pb-0 mb-10">
       {/* Top Curve BG */}
-      <div className="absolute top-0 left-0 w-full h-32 bg-[#fad1d0] rounded-b-[80px] z-10" />
+      <div className="absolute top-0 left-0 w-full h-32 bg-gray-300 rounded-b-[80px] z-10" />
 
       {/* Main Content */}
-      <div className="relative container mx-auto px-4 pt-20 flex flex-col lg:flex-row items-center z-0">
+      <div className="relative container mx-auto px-4 flex flex-col lg:flex-row items-center z-20">
         {/* Left Image */}
-        <div className="w-full lg:w-1/2 relative mb-12 lg:mb-0">
-          <img
-            src={mainImage}
-            alt="Meeting"
-            className="rounded-bl-[120px] rounded-tl-[60px] rounded-br-[80px] object-cover w-full max-h-[400px] shadow-xl"
-          />
-        </div>
+        <div className="w-full lg:w-1/2 relative mb-12 lg:mb-0 h-[500px] lg:h-[600px] overflow-hidden">
+  <div
+    className="w-full h-full bg-cover bg-center"
+    style={{
+      backgroundImage: `url(${mainImage})`,
+      clipPath: "path('M0,0 Q250,80 500,0 L500,600 L0,600 Z')",
+    }}
+  ></div>
+</div>
 
         {/* Right Content */}
         <div className="w-full lg:w-1/2 lg:pl-12 text-center lg:text-left">
-          <p className="text-red-500 font-semibold mb-2">• OUR COMPANY •</p>
-          <h2 className="text-6xl font-bold mb-4 leading-snug">
+          <p className="text-red-500 font-semibold mb-2">• Kandola Enterprises •</p>
+          <h2 className="text-4xl font-bold mb-2 leading-snug">
             Crafting success tailored solution for each & every challenges
           </h2>
-          <p className="text-gray-600 mb-6">
-            Our mission is to empower businesses of all size to thrive in an
-            ever-changing marketplace. We are committed to delivering exceptional
-            value through strategic insight and innovative approaches.
+          <p className="text-gray-600 mb-0">
+          At Kandola Enterprises, we empower individuals and businesses to take control of their financial future through expert credit repair and strategic consulting services. Specializing in both personal and business credit restoration, our mission is to help our clients unlock opportunities that stronger credit can bring — from home ownership to business expansion. 
+
+We understand that credit challenges can hold you back. That’s why our team of experienced consultants works closely with each client to identify credit issues, dispute inaccuracies, and develop a clear, personalized plan to improve and maintain credit health over time
+          </p>
+          <p className="text-gray-600 mb-0">
+          Whether you're an entrepreneur looking to strengthen your business credit profile or an individual working toward financial recovery, Kandola Enterprises is your trusted partner every step of the way. 
           </p>
 
           {/* Bullet Points + Clients */}
@@ -60,44 +53,58 @@ const OurCompany = () => {
               ))}
             </div>
 
-          {/* Clients Section (Stacked below everything) */}
-<div className="flex flex-col items-center mb-8">
-  <div className="flex -space-x-2 mb-2">
-    <img
-      src="https://randomuser.me/api/portraits/men/32.jpg"
-      alt="Client 1"
-      className="w-10 h-10 rounded-full border-2 border-white"
-    />
-    <img
-      src="https://randomuser.me/api/portraits/women/44.jpg"
-      alt="Client 2"
-      className="w-10 h-10 rounded-full border-2 border-white"
-    />
-    <img
-      src="https://randomuser.me/api/portraits/men/64.jpg"
-      alt="Client 3"
-      className="w-10 h-10 rounded-full border-2 border-white"
-    />
-    <div className="w-10 h-10 rounded-full bg-red-500 text-white flex items-center justify-center text-sm font-semibold border-2 border-white">
-      +
-    </div>
-  </div>
-  <div className="text-center">
-    <p className="text-2xl font-bold">3K+</p>
-    <p className="text-gray-600 text-sm">Happy clients worldwide</p>
-  </div>
-</div>
-
+            {/* Clients Section */}
+            <div className="flex flex-col items-center">
+              <div className="flex -space-x-2 mb-2">
+                <img
+                  src="https://randomuser.me/api/portraits/men/32.jpg"
+                  alt="Client 1"
+                  className="w-10 h-10 rounded-full border-2 border-white"
+                />
+                <img
+                  src="https://randomuser.me/api/portraits/women/44.jpg"
+                  alt="Client 2"
+                  className="w-10 h-10 rounded-full border-2 border-white"
+                />
+                <img
+                  src="https://randomuser.me/api/portraits/men/64.jpg"
+                  alt="Client 3"
+                  className="w-10 h-10 rounded-full border-2 border-white"
+                />
+                <div className="w-10 h-10 rounded-full bg-red-500 text-white flex items-center justify-center text-sm font-semibold border-2 border-white">
+                  +
+                </div>
+              </div>
+              <div className="text-center">
+                <p className="text-2xl font-bold">3K+</p>
+                <p className="text-gray-600 text-sm">Happy clients worldwide</p>
+              </div>
+            </div>
           </div>
 
           {/* CTA Button */}
-          <div className="text-center">
-            <button className="flex items-center px-6 py-3 bg-white hover:bg-red-500 hover:text-white text-red-500 font-semibold rounded-full shadow-md transition mx-auto">
+          <div className="text-center lg:text-left">
+            <button className="flex items-center mb-2 px-6 py-3 bg-white hover:bg-red-500 hover:text-white text-red-500 font-semibold rounded-full shadow-md transition mx-auto lg:mx-0">
               <FiArrowRight className="mr-2" />
               Read more
             </button>
           </div>
         </div>
+      </div>
+
+      {/* ✅ Bottom Convex Border */}
+      <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-[0] z-10 rotate-180">
+        <svg
+          className="relative block w-full h-[100px]"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M321.39,56.39C177.22,28.36,64.78,4.45,0,0V120H1200V0c-64.78,4.45-177.22,28.36-321.39,56.39C735.25,86.5,612.96,120,600,120S464.75,86.5,321.39,56.39Z"
+            fill="#D1D5DB"
+          />
+        </svg>
       </div>
     </section>
   );

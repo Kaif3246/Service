@@ -12,6 +12,7 @@ import FunFacts from './components/homepage/FunFacts';
 import Testimonials from './components/homepage/Testimonials';
 import ContactForm from './components/homepage/ContactForn';
 import Footer from './components/homepage/Footer';
+import FullScreen from './components/homepage/FullScreen';
 
 function App() {
  
@@ -21,6 +22,7 @@ function App() {
    <TopBar/>
   <Navbar/>
   <HeroSection/>
+
   <CoreFeatures/>
   <AboutCompany/>
   <Services/>

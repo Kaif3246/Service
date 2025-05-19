@@ -4,21 +4,21 @@ import { FaQuoteLeft, FaStar, FaChevronLeft, FaChevronRight } from 'react-icons/
 
 const testimonials = [
     {
-        text: "Our experience with Solvior has been nothing short of exceptional. From day one, their team demonstrated a deep understanding of our industry and quickly identified key areas for improvement.",
+        text: "Our experience with Solvior has been nothing short of exceptional.Our experience with Solvior has been nothing short of exceptional. Our experience with Solvior has been nothing short of exceptional. Our experience with Solvior has been nothing short of exceptional. Our experience with Solvior has been nothing short of exceptional. From day one, their team demonstrated a deep understanding of our industry and quickly identified key areas for improvement.",
         name: "Jack William",
         role: "Sr. Manager",
         rating: 4,
         image: "https://randomuser.me/api/portraits/men/32.jpg"
     },
     {
-        text: "Their thorough market analysis and customized strategies helped us streamline operations. We saw a significant increase in our bottom line.",
+        text: "Their thorough market analysis and customized strategies helped us streamline operations.Our experience with Solvior has been nothing short of exceptional. Our experience with Solvior has been nothing short of exceptional. Our experience with Solvior has been nothing short of exceptional. Our experience with Solvior has been nothing short of exceptional. We saw a significant increase in our bottom line.",
         name: "Burdee Nicolas",
         role: "Sr. Executive",
         rating: 5,
         image: "https://randomuser.me/api/portraits/men/75.jpg"
     },
     {
-        text: "Solvior helped us improve customer engagement through innovative digital strategies. We loved their data-first approach!",
+        text: "Solvior helped us improve customer engagement through innovative digital strategies.  Our experience with Solvior has been nothing short of exceptional. Our experience with Solvior has been nothing short of exceptional. Our experience with Solvior has been nothing short of exceptional.  Our experience with Solvior has been nothing short of exceptional.We loved their data-first approach!",
         name: "Riya Desai",
         role: "Marketing Head",
         rating: 5,
@@ -74,7 +74,7 @@ const Testimonials = () => {
                 <Slider {...settings} ref={sliderRef}>
                     {testimonials.map((item, idx) => (
                         <div key={idx} className="px-4 h-full">
-                            <div className="bg-[#fad1d0] rounded-xl p-8 shadow-md min-h-[420px] max-h-[420px] overflow-y-auto flex flex-col h-full">
+                            <div className="bg-gray-200 rounded-xl p-8 shadow-md min-h-[420px] max-h-[420px] overflow-y-auto flex flex-col h-full">
                                 {/* Text + Quote icon */}
                                 <div className="flex items-start gap-4 mb-auto">
                                     <div className="flex-shrink-0 w-12 h-12 flex items-center justify-center">
