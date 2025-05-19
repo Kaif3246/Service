@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { FiChevronDown, FiX } from "react-icons/fi";
 import { FaUserAlt } from 'react-icons/fa';
-
-
 import { MdWindow } from "react-icons/md";
 import logo from "../../assets/images/logo.jpg";
 
@@ -11,21 +9,17 @@ const Navbar = () => {
   const [showNavbar, setShowNavbar] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
 
-  // Track scroll direction
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > lastScrollY && window.scrollY > 100) {
-        // Scrolling down and scrolled more than 100px - hide navbar
         setShowNavbar(false);
       } else {
-        // Scrolling up - show navbar
         setShowNavbar(true);
       }
       setLastScrollY(window.scrollY);
     };
 
     window.addEventListener("scroll", handleScroll);
-
     return () => window.removeEventListener("scroll", handleScroll);
   }, [lastScrollY]);
 
@@ -39,11 +33,11 @@ const Navbar = () => {
 
   return (
     <>
- <div
-  className={`bg-black text-white py-4 px-6 flex items-center justify-between relative transition-transform duration-300 shadow-[0_4px_30px_rgba(255,255,255,0.25)] ${
-    showNavbar ? "translate-y-0" : "-translate-y-full"
-  } fixed top-0 left-0 right-0 z-50`}
->
+      <div
+        className={`bg-black text-white py-4 px-6 flex items-center justify-between relative transition-transform duration-300 shadow-[0_4px_30px_rgba(255,255,255,0.25)] ${
+          showNavbar ? "translate-y-0" : "-translate-y-full"
+        } sticky top-0 z-50`}
+      >
         {/* Logo Left */}
         <div className="flex items-center z-10">
           <img src={logo} alt="Logo" className="h-16 mr-2 rounded-4xl" />
@@ -132,7 +126,6 @@ const Navbar = () => {
           {/* Explore + search */}
           <div className="flex items-center gap-2 cursor-pointer hover:text-red-500">
             <span>Login</span>
-            // Use in your component like this:
             <FaUserAlt size={24} className="text-gray-700" />
           </div>
 

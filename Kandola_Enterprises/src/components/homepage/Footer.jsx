@@ -15,7 +15,7 @@ const Footer = () => {
                         PMB 233332
                         Wilmington,<br /> Delaware 19802-4447 US
                         </p>
-                        <p className="text-base mt-2">+1 9494316385</p>
+                        <p className="text-base mt-2">+1 git 9494316385</p>
                     </div>
                     <div>
                         <p className="text-gray-400 text-lg font-semibold"></p>
@@ -77,7 +77,7 @@ const Footer = () => {
             <div className="border-t border-white/20 pt-6 mt-6 pb-6">
                 <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between text-sm text-gray-400 gap-4">
                     {/* Left */}
-                    <div>© 2025 Solvior. All rights reserved.</div>
+                    <div>© 2025 Kandola. All rights reserved.</div>
 
                     {/* Center - Social Icons */}
                     <div className="flex space-x-4 text-white">
