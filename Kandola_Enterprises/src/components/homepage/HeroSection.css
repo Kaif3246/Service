@@ -1,0 +1,4 @@
+.hero-section {
+    position: relative;
+    clip-path: path("M0,0 H100% V85% C25% 100%, 75% 100%, 100% 85% V0 Z");
+}

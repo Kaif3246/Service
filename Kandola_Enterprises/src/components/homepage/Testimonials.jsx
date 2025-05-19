@@ -1,6 +1,7 @@
 import React, { useRef } from 'react';
 import Slider from 'react-slick';
 import { FaQuoteLeft, FaStar, FaChevronLeft, FaChevronRight } from 'react-icons/fa';
+import { FiArrowRight, FiArrowLeft } from "react-icons/fi";
 
 const testimonials = [
     {
@@ -58,15 +59,15 @@ const Testimonials = () => {
                     <div className="flex gap-4">
                         <button
                             onClick={() => sliderRef.current.slickPrev()}
-                            className="w-10 h-10 rounded-full bg-white text-red-500 shadow hover:bg-blue-50 transition"
+                            className="w-10 h-10 rounded-full bg-white text-red-500 shadow hover:bg-red-500 hover:text-white transition"
                         >
-                            <FaChevronLeft className="mx-auto text-3xl" />
+                            <FiArrowLeft className="mx-auto text-3xl" />
                         </button>
                         <button
                             onClick={() => sliderRef.current.slickNext()}
-                            className="w-10 h-10 rounded-full bg-white text-red-500 shadow hover:bg-blue-50 transition"
+                            className="w-10 h-10 rounded-full bg-white text-red-500 shadow hover:bg-red-500 hover:text-white transition"
                         >
-                            <FaChevronRight className="mx-auto text-3xl" />
+                            <FiArrowRight className="mx-auto text-3xl" />
                         </button>
                     </div>
                 </div>
