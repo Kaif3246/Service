@@ -14,7 +14,7 @@ const OurCompany = () => {
         {/* Left Image */}
         <div className="w-full lg:w-1/2 relative mb-12 lg:mb-0 h-[500px] lg:h-[600px] overflow-hidden">
   <div
-    className="w-full min-h-[100%] bg-cover bg-center"
+    className="w-full min-h-[100%] px-2 bg-cover bg-center"
     style={{
       backgroundImage: `url(${mainImage})`,
       clipPath: "path('M0,0 Q250,80 500,0 L500,600 L0,600 Z')",
@@ -84,7 +84,7 @@ We understand that credit challenges can hold you back. That’s why our team of
 
           {/* CTA Button */}
           <div className="text-center lg:text-left">
-            <button className="flex items-center mb-2 px-6 py-3 bg-white hover:bg-red-500 hover:text-white text-red-500 font-semibold rounded-full shadow-md transition mx-auto lg:mx-0">
+            <button className="flex items-center mb-10 px-6 py-3 bg-white hover:bg-red-500 hover:text-white text-red-500 font-semibold rounded-full shadow-md transition mx-auto lg:mx-0">
               <FiArrowRight className="mr-2" />
               Read more
             </button>
