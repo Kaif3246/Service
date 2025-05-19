@@ -5,7 +5,7 @@ import { FiArrowRight } from "react-icons/fi";
 
 const OurCompany = () => {
   return (
-    <section className="relative bg-gray-300 min-h-[95%] flex items-center overflow-hidden pt-32 pb-0 mb-10">
+    <section className="relative bg-gray-300 min-h-[95%] flex items-center overflow-hidden pt-32 pb-0 mb-20">
       {/* Top Curve BG */}
       <div className="absolute top-0 left-0 w-full h-32 bg-gray-300 rounded-b-[80px] z-10" />
 

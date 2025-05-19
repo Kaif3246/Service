@@ -47,7 +47,7 @@ const Testimonials = () => {
     };
 
     return (
-        <section className="bg-[#f4f7fb] py-20">
+        <section className="bg-white py-20">
             <div className="max-w-7xl mx-auto px-6">
                 {/* Top Section: Heading + Arrows */}
                 <div className="flex items-center justify-between mb-14">
@@ -74,7 +74,7 @@ const Testimonials = () => {
                 <Slider {...settings} ref={sliderRef}>
                     {testimonials.map((item, idx) => (
                         <div key={idx} className="px-4 h-full">
-                            <div className="bg-gray-200 rounded-xl p-8 shadow-md min-h-[420px] max-h-[420px] overflow-y-auto flex flex-col h-full">
+                            <div className="bg-gray-300 rounded-xl p-8 shadow-md min-h-[420px] max-h-[420px] overflow-y-auto flex flex-col h-full">
                                 {/* Text + Quote icon */}
                                 <div className="flex items-start gap-4 mb-auto">
                                     <div className="flex-shrink-0 w-12 h-12 flex items-center justify-center">
