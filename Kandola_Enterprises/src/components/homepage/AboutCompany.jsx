@@ -14,7 +14,7 @@ const OurCompany = () => {
         {/* Left Image */}
         <div className="w-full lg:w-1/2 relative mb-12 lg:mb-0 h-[500px] lg:h-[600px] overflow-hidden">
   <div
-    className="w-full h-full bg-cover bg-center"
+    className="w-full min-h-[100%] bg-cover bg-center"
     style={{
       backgroundImage: `url(${mainImage})`,
       clipPath: "path('M0,0 Q250,80 500,0 L500,600 L0,600 Z')",
