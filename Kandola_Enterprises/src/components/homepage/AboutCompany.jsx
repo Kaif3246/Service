@@ -33,7 +33,7 @@ const OurCompany = () => {
 
 We understand that credit challenges can hold you back. That’s why our team of experienced consultants works closely with each client to identify credit issues, dispute inaccuracies, and develop a clear, personalized plan to improve and maintain credit health over time
           </p>
-          <p className="text-gray-600 mb-0">
+          <p className="text-gray-600 mb-4">
           Whether you're an entrepreneur looking to strengthen your business credit profile or an individual working toward financial recovery, Kandola Enterprises is your trusted partner every step of the way. 
           </p>
 
