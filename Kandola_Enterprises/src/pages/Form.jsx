@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import axios from 'axios';
 
 const MultiStepForm = () => {
   const [step, setStep] = useState(1);
@@ -22,10 +23,41 @@ const MultiStepForm = () => {
   const nextStep = () => setStep((prev) => prev + 1);
   const prevStep = () => setStep((prev) => Math.max(1, prev - 1));
 
+  const handleSubmit = async () => {
+    try {
+      const response = await axios.post('http://localhost:8080/api/serviceForm/submit-service-form', formData);
+      alert('Form submitted successfully!');
+      setFormData({
+        goal: '',
+        fundingAmount: '',
+        timeline: '',
+        investment: '',
+        inquiryType: '',
+        firstName: '',
+        lastName: '',
+        phone: '',
+        email: '',
+      });
+      console.log('Server response:', response.data);
+    } catch (error) {
+      console.error('Form submission failed:', error);
+      alert('Something went wrong. Please try again.');
+      setFormData({
+        goal: '',
+        fundingAmount: '',
+        timeline: '',
+        investment: '',
+        inquiryType: '',
+        firstName: '',
+        lastName: '',
+        phone: '',
+        email: '',
+      });
+    }
+  };
+
   return (
     <div className="min-h-screen bg-white flex flex-col items-center py-10 px-4 text-[#1a1a1a] font-sans">
-     
-
       <div className="w-full max-w-4xl border-t-4 border-black rounded-md shadow-md px-10 py-12">
         <p className="text-sm font-semibold text-black mb-2">Step {step}/3</p>
         <div className="w-full bg-[#f5f3ee] h-2 rounded mb-8">
@@ -193,6 +225,7 @@ const MultiStepForm = () => {
                 Back
               </button>
               <button
+                onClick={handleSubmit}
                 className="bg-black text-white px-6 py-3 rounded-md hover:bg-[#00465b]"
               >
                 Submit

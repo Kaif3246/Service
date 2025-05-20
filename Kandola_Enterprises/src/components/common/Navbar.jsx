@@ -54,12 +54,12 @@ const Navbar = () => {
       >
         <Link to="/" className="flex items-center z-10">
           <img src={logo} alt="Logo" className="h-16 mr-2 rounded-4xl" />
-          <div className="flex text-4xl items-end">
-            <span className="font-serif">Kan</span>
-            <span
+          <div className="flex items-baseline">
+            <span className="font-serif text-4xl">Kan</span>
+            <span className="text-4xl "
               style={{
                 fontFamily: '"Brush Script MT","Brush Script Std",cursive',
-                marginLeft: "0.25rem",
+               
               }}
             >
               dola
