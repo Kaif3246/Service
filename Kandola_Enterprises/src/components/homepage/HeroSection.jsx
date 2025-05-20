@@ -113,11 +113,7 @@ const HeroSection = () => {
                     backgroundRepeat: "no-repeat",
                 }}
             >
-                {/* Canvas Particles Layer */}
-                <canvas
-                    ref={canvasRef}
-                    className="absolute inset-0 w-full h-full z-0"
-                ></canvas>
+             
 
                 {/* SVG Morphing Blob */}
                 <svg

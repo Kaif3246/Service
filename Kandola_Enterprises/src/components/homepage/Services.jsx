@@ -1,5 +1,6 @@
 import React, { useRef } from "react";
 import { motion } from "framer-motion";
+import { useNavigate } from 'react-router-dom';
 import {
   FaChartLine,
   FaSyncAlt,
@@ -11,6 +12,7 @@ import {
 import { FiArrowRight, FiArrowLeft } from "react-icons/fi";
 
 export default function FullPageScroll() {
+    
   const scrollRef = useRef(null);
 
   const sections = [
@@ -62,6 +64,12 @@ export default function FullPageScroll() {
       scrollRef.current.scrollTo({ left: scrollAmount, behavior: "smooth" });
     }
   };
+  const navigate = useNavigate();
+  
+    const handleClick = () => {
+      navigate('/services'); // Change to your desired route
+    };
+  
 
   return (
     <div className="mt-10 px-10 h-screen flex flex-col">
@@ -151,7 +159,7 @@ export default function FullPageScroll() {
               <p className="text-sm">{section.text}</p>
             </div>
 
-            <button className="mt-6 inline-flex items-center gap-2 bg-white text-red-500 hover:bg-red-500 hover:text-white font-semibold px-4 py-2 rounded-full shadow-lg transition duration-300">
+            <button onClick={handleClick} className="mt-6 inline-flex items-center gap-2 bg-white text-red-500 hover:bg-red-500 hover:text-white font-semibold px-4 py-2 rounded-full shadow-lg transition duration-300">
               Free consultation <FiArrowRight className="text-xl" />
             </button>
           </motion.div>

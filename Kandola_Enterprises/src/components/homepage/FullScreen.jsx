@@ -2,8 +2,12 @@ import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { FiArrowRight } from "react-icons/fi";
 import heroImage from "../../assets/images/heros-bg.jpg";
+import { useNavigate } from 'react-router-dom';
 
 const FullScreenConvexSection = () => {
+   
+    
+   
     const canvasRef = useRef(null);
 
     useEffect(() => {
@@ -74,7 +78,7 @@ const FullScreenConvexSection = () => {
                 particlesArray.push(new Particle());
             }
         }
-
+        
         function animate() {
             ctx.clearRect(0, 0, canvas.width, canvas.height);
             particlesArray.forEach((p) => {
@@ -97,6 +101,13 @@ const FullScreenConvexSection = () => {
             window.removeEventListener("resize", resizeCanvas);
         };
     }, []);
+    
+    const navigate = useNavigate();
+          
+    const handleClick = () => {
+      navigate('/services'); // Change to your desired route
+    };
+
 
     return (
         <section className="relative bg-white min-h-[90vh] flex items-center justify-center overflow-hidden">
@@ -147,7 +158,7 @@ const FullScreenConvexSection = () => {
         <p className="hero-text-desc text-lg text-gray-300 max-w-lg pt-4">
             At Kandola Enterprises, we don’t just repair credit — we rebuild confidence, restore opportunities, and reshape financial futures.
         </p>
-        <button className="cta-button mt-6 inline-flex items-center gap-2 bg-white text-red-500 hover:bg-red-500 hover:text-white font-semibold px-6 py-3 rounded-full shadow-lg transition duration-300">
+        <button onClick={handleClick} className="cta-button mt-6 inline-flex items-center gap-2 bg-white text-red-500 hover:bg-red-500 hover:text-white font-semibold px-6 py-3 rounded-full shadow-lg transition duration-300">
             <FiArrowRight className="text-xl" />
             Free consultation
         </button>
