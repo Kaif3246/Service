@@ -1,6 +1,45 @@
 import React from "react";
 
+import CoreFeatures from "../components/homepage/CoreFeatures";
+import AboutCompany from "../components/homepage/AboutCompany";
+import Services from "../components/homepage/Services";
+import FunFacts from "../components/homepage/FunFacts";
+import Testimonials from "../components/homepage/Testimonials";
+import ContactForm from "../components/homepage/ContactForn";
+import FullScreen from "../components/homepage/FullScreen";
+
 const Home = () => {
-    return <div className="text-center mt-20 text-3xl">Home Page</div>;
-  };
-  export default Home;
+  return (
+    <>
+      <section id="home">
+        <FullScreen />
+      </section>
+
+      <section id="features">
+        <CoreFeatures />
+      </section>
+
+      <section id="about">
+        <AboutCompany />
+      </section>
+
+      <section id="services">
+        <Services />
+      </section>
+
+      <section id="funfacts">
+        <FunFacts />
+      </section>
+
+      <section id="testimonials">
+        <Testimonials />
+      </section>
+
+      <section id="contact">
+        <ContactForm />
+      </section>
+    </>
+  );
+};
+
+export default Home;

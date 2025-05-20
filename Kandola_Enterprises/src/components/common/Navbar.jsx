@@ -1,45 +1,53 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { FiChevronDown, FiX } from "react-icons/fi";
 import { FaUserAlt } from 'react-icons/fa';
 import { MdWindow } from "react-icons/md";
+import { Link } from "react-router-dom"; // ✅ Already imported
 import logo from "../../assets/images/logo.jpg";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [showNavbar, setShowNavbar] = useState(true);
-  const [lastScrollY, setLastScrollY] = useState(0);
+  const lastScrollY = useRef(0);
+  const ticking = useRef(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > lastScrollY && window.scrollY > 100) {
-        setShowNavbar(false);
-      } else {
-        setShowNavbar(true);
+      if (!ticking.current) {
+        window.requestAnimationFrame(() => {
+          if (window.scrollY > lastScrollY.current && window.scrollY > 100) {
+            setShowNavbar(false);
+          } else {
+            setShowNavbar(true);
+          }
+          lastScrollY.current = window.scrollY;
+          ticking.current = false;
+        });
+        ticking.current = true;
       }
-      setLastScrollY(window.scrollY);
     };
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-  }, [lastScrollY]);
+  }, []);
 
   const navItems = [
-    { name: "Home", dropdown: false },
-    { name: "About Us", dropdown: false },
-    { name: "Our Services", dropdown: false },
-    { name: "Testimonials", dropdown: false },
-    { name: "Contact Us", dropdown: false },
+    { name: "Home", href: "#home" },
+    { name: "About Us", href: "#about" },
+    { name: "Our Services", href: "#services" },
+    { name: "Testimonials", href: "#testimonials" },
+    { name: "Contact Us", href: "#contact" },
   ];
 
   return (
     <>
       <div
-        className={`bg-black text-white py-4 px-6 flex items-center justify-between relative transition-transform duration-300 shadow-[0_4px_30px_rgba(255,255,255,0.25)] ${
+        className={`bg-black text-white py-4 px-6 flex items-center justify-between relative transition-transform duration-300 ease-in-out shadow-[0_4px_30px_rgba(255,255,255,0.25)] will-change-transform ${
           showNavbar ? "translate-y-0" : "-translate-y-full"
         } sticky top-0 z-50`}
       >
-        {/* Logo Left */}
-        <div className="flex items-center z-10">
+        {/* ✅ Logo with link to home */}
+        <Link to="/" className="flex items-center z-10">
           <img src={logo} alt="Logo" className="h-16 mr-2 rounded-4xl" />
           <div className="flex text-4xl items-end">
             <span className="font-serif">Kan</span>
@@ -52,20 +60,18 @@ const Navbar = () => {
               dola
             </span>
           </div>
-        </div>
+        </Link>
 
         {/* Nav items center */}
         <div className="hidden md:flex gap-6 items-center absolute left-1/2 -translate-x-1/2 z-0">
           {navItems.map((item) => (
-            <div
+            <a
               key={item.name}
+              href={item.href}
               className="group relative flex items-center gap-1 cursor-pointer hover:text-red-500 transition-all duration-200"
             >
-              <span>{item.name}</span>
-              {item.dropdown && (
-                <FiChevronDown className="text-sm transition-transform duration-300 group-hover:rotate-180" />
-              )}
-            </div>
+              {item.name}
+            </a>
           ))}
         </div>
 
@@ -75,9 +81,12 @@ const Navbar = () => {
             <span>Login</span>
             <FaUserAlt size={20} className="text-gray-700" />
           </div>
-          <button className="flex items-center gap-2 border-2 border-white rounded-full px-4 py-1 hover:bg-red-500">
-            ➕ Consult for Business loan
-          </button>
+          {/* ✅ Button linked to /services */}
+          <Link to="/services">
+            <button className="flex items-center gap-2 border-2 border-white rounded-full px-4 py-1 hover:bg-red-500">
+              ➕ Consult for Business loan
+            </button>
+          </Link>
         </div>
 
         {/* Mobile menu button */}
@@ -95,7 +104,7 @@ const Navbar = () => {
 
       {/* Mobile slide-in menu */}
       <div
-        className={`fixed top-0 right-0 h-full w-64 bg-black text-white transform transition-transform duration-300 shadow-lg z-50 ${
+        className={`fixed top-0 right-0 h-full w-64 bg-black text-white transform transition-transform duration-300 ease-in-out shadow-lg z-50 ${
           menuOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
@@ -113,26 +122,28 @@ const Navbar = () => {
         {/* Mobile nav items */}
         <nav className="flex flex-col gap-6 px-6">
           {navItems.map((item) => (
-            <div
+            <a
               key={item.name}
+              href={item.href}
               className="flex items-center gap-2 cursor-pointer hover:text-red-500 transition-colors duration-200"
               onClick={() => setMenuOpen(false)}
             >
-              <span>{item.name}</span>
-              {item.dropdown && <FiChevronDown />}
-            </div>
+              {item.name}
+            </a>
           ))}
 
-          {/* Explore + search */}
+          {/* Login */}
           <div className="flex items-center gap-2 cursor-pointer hover:text-red-500">
             <span>Login</span>
             <FaUserAlt size={24} className="text-gray-700" />
           </div>
 
-          {/* Get in touch button */}
-          <button className="flex items-center gap-2 border-2 border-white rounded-full px-4 py-1 hover:bg-red-500 w-full justify-center mt-4">
-            ➕ Get in touch
-          </button>
+          {/* ✅ Mobile Consult button linked to /services */}
+          <Link to="/services" onClick={() => setMenuOpen(false)}>
+            <button className="flex items-center gap-2 border-2 border-white rounded-full px-4 py-1 hover:bg-red-500 w-full justify-center mt-4">
+              ➕ Consult for Business loan
+            </button>
+          </Link>
         </nav>
       </div>
 

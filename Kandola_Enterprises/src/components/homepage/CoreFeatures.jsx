@@ -29,7 +29,7 @@ const features = [
 
 const CoreFeatures = () => {
   return (
-    <section className="min-h-[150%] py-20 bg-white text-center flex items-center mb-20 ">
+    <section className="min-h-[150%] py-20 bg-white text-center flex items-center mb-20 mt-0">
       {/* Custom shake animation CSS */}
       <style>
         {`

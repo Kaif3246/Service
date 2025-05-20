@@ -21,16 +21,10 @@ function App() {
    <>
    <TopBar/>
   <Navbar/>
-  <HeroSection/>
-
-  <CoreFeatures/>
-  <AboutCompany/>
-  <Services/>
-  <FunFacts/>
-  <Testimonials/>
-  <ContactForm/>
+  <Outlet/>
+ 
   <Footer/>
-  
+
    </>
   )
 }
