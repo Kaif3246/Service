@@ -41,7 +41,7 @@ const Navbar = () => {
   return (
     <>
       <div
-        className={`bg-black text-white py-4 px-6 flex items-center justify-between relative z-50 transition-transform duration-300 ease-in-out ${
+        className={`bg-[#f9f9f9] text-black py-4 px-6 flex items-center justify-between relative z-50 transition-transform duration-300 ease-in-out ${
           sticky ? "sticky top-0" : ""
         } ${showNavbar ? "translate-y-0" : "-translate-y-full"}`}
         style={{
