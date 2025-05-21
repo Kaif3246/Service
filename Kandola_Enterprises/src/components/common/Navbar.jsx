@@ -53,7 +53,7 @@ const Navbar = () => {
         }}
       >
         <Link to="/" className="flex items-center z-10">
-          <img src={logo} alt="Logo" className="h-16 mr-2 " />
+          <img src={logo} alt="Logo" className="h-18 mr-2 " />
           <div className="flex justify-center w-full">
   <div className="inline-flex items-baseline">
     <span className="font-bold text-xl leading-tight">Kandola Enterprises,LLC</span>
@@ -80,7 +80,7 @@ const Navbar = () => {
             <FaUserAlt size={20} className="text-gray-700" />
           </div>
           <Link to="/services">
-            <button className="flex items-center gap-2 border-2 border-white  px-4 py-1 hover:bg-red-500">
+            <button className="flex items-center gap-2 border-2 border-black shadow-md  px-4 py-1 hover:bg-red-500">
               ➕ Consult for Business loan
             </button>
           </Link>
@@ -131,11 +131,6 @@ const Navbar = () => {
             <FaUserAlt size={24} className="text-gray-700" />
           </div>
 
-          <Link to="/services" onClick={() => setMenuOpen(false)}>
-            <button className="flex items-center gap-2 border-2 border-white  px-4 py-1 hover:bg-red-500 w-full justify-center mt-4">
-              ➕ Consult for Business loan
-            </button>
-          </Link>
         </nav>
       </div>
 
