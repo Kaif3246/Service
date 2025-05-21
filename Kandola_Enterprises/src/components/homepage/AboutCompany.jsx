@@ -24,18 +24,23 @@ const OurCompany = () => {
 
         {/* Right Content */}
         <div className="w-full lg:w-1/2 lg:pl-12 text-center lg:text-left">
-          <p className="text-red-500 font-semibold mb-2">• Kandola Enterprises •</p>
-          <h2 className="text-4xl font-bold mb-2 leading-snug">
-            Crafting success tailored solution for each & every challenges
+          <p className="text-red-500 leading-tight font-semibold mb-2">• Kandola Enterprises •</p>
+          <h2 className="text-4xl font-bold mb-2 leading-tight">
+          Empowering Growth Through Custom Solutions
           </h2>
-          <p className="text-gray-600 mb-0">
-          At Kandola Enterprises, we empower individuals and businesses to take control of their financial future through expert credit repair and strategic consulting services. Specializing in both personal and business credit restoration, our mission is to help our clients unlock opportunities that stronger credit can bring — from home ownership to business expansion. 
-
-We understand that credit challenges can hold you back. That’s why our team of experienced consultants works closely with each client to identify credit issues, dispute inaccuracies, and develop a clear, personalized plan to improve and maintain credit health over time
+          <p className="text-gray-600 tracking-wider mb-0">
+          At Kandola Enterprises, we empower individuals and businesses to take control of their financial future through expert guidance and strategic consulting. Our services are designed to strengthen financial foundations, restore confidence, 
+          and unlock meaningful opportunities—from home ownership to business growth.
           </p>
-          <p className="text-gray-600 mb-4">
-          Whether you're an entrepreneur looking to strengthen your business credit profile or an individual working toward financial recovery, Kandola Enterprises is your trusted partner every step of the way. 
+          <p className="text-gray-600 tracking-wider mb-0">
+          We recognize that financial challenges can create barriers. That’s why our experienced consultants work closely with each client to assess their unique situation, identify key obstacles, 
+          and create customized strategies for long-term financial wellness.
           </p>
+          <p className="text-gray-600 tracking-wider mb-4">
+          Whether you're an entrepreneur aiming to elevate your business or an individual focused on rebuilding financial strength, Kandola Enterprises is your trusted 
+          partner—dedicated to helping you move forward with clarity and confidence.
+          </p>
+        
 
           {/* Bullet Points + Clients */}
           <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-8 gap-6">
@@ -46,7 +51,7 @@ We understand that credit challenges can hold you back. That’s why our team of
                 "Client centric approach",
                 "Commitment excellences"
               ].map((item, index) => (
-                <div key={index} className="flex items-center text-gray-700">
+                <div key={index} className="flex items-center tracking-wider text-gray-700">
                   <FaCheck className="text-red-500 mr-2" />
                   {item}
                 </div>
@@ -77,14 +82,14 @@ We understand that credit challenges can hold you back. That’s why our team of
               </div>
               <div className="text-center">
                 <p className="text-2xl font-bold">3K+</p>
-                <p className="text-gray-600 text-sm">Happy clients worldwide</p>
+                <p className="text-gray-600 tracking-wider text-sm">Happy clients worldwide</p>
               </div>
             </div>
           </div>
 
           {/* CTA Button */}
           <div className="text-center lg:text-left">
-            <button className="flex items-center mb-10 px-6 py-3 bg-white hover:bg-red-500 hover:text-white text-red-500 font-semibold rounded-full shadow-md transition mx-auto lg:mx-0">
+            <button className="flex items-center tracking-wider mb-10 px-6 py-3 bg-white hover:bg-red-500 hover:text-white text-red-500 font-semibold rounded-full shadow-md transition mx-auto lg:mx-0">
               <FiArrowRight className="mr-2" />
               Read more
             </button>

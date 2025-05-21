@@ -22,30 +22,25 @@ export default function FullPageScroll() {
       text: "Helping you eliminate the negative effects of repossessions on your credit.",
     },
     {
-      icon: <FaSyncAlt size={50} className="text-red-500 mb-4" />,
-      title: "Late Payments",
-      text: "Assisting you in correcting or removing late payment entries from your credit report.",
-    },
-    {
-      icon: <FaCogs size={50} className="text-red-500 mb-4" />,
-      title: "Medical Bills",
-      text: "Handling and resolving unpaid medical bills impacting your credit report.",
-    },
-    {
-      icon: <FaUserTie size={50} className="text-red-500 mb-4" />,
-      title: "Dispute",
-      text: "Disputing inaccuracies on your credit report to ensure it accurately reflects your financial history.",
-    },
-    {
-      icon: <FaLightbulb size={50} className="text-red-500 mb-4" />,
-      title: "Settlement",
-      text: "Negotiating with creditors to settle outstanding debts for less than the full amount owed and updating your credit report accordingly.",
-    },
-    {
-      icon: <FaRocket size={50} className="text-red-500 mb-4" />,
-      title: "Credit Card and More",
-      text: "Providing expert guidance and solutions for managing credit card debt and other credit-related challenges.",
-    },
+        icon: <FaCogs size={50} className="text-red-500 mb-4" />,
+        title: "Medical Expense Management",
+        text: "Supporting you in managing and negotiating medical debts to reduce financial stress.",
+      },
+      {
+        icon: <FaUserTie size={50} className="text-red-500 mb-4" />,
+        title: "Financial Record Review",
+        text: "Ensuring your financial records reflect accurate and up-to-date information through expert analysis and support.",
+      },
+      {
+        icon: <FaLightbulb size={50} className="text-red-500 mb-4" />,
+        title: "Debt Resolution Planning",
+        text: "Creating smart settlement plans with creditors to help you regain control of your financial future.",
+      },
+      {
+        icon: <FaRocket size={50} className="text-red-500 mb-4" />,
+        title: "Credit & Financial Guidance",
+        text: "Offering expert insight on credit usage, debt management, and financial planning for long-term success.",
+      },
   ];
 
   const scroll = (direction) => {
@@ -76,26 +71,25 @@ export default function FullPageScroll() {
       {/* Header with title and arrows */}
       <section className="mb-10 flex items-center justify-between">
         <div>
-          <h1 className="text-5xl font-bold text-black">
-            Benefit from Our Exclusive Services
+          <h1 className="text-5xl leading-tight font-bold text-black">
+          Empowering You Through Tailored Support
           </h1>
-          <p className="mt-4 max-w-xl text-gray-700 text-lg">
-            We believe in a personalized approach to credit repair,
-            recognizing that every client’s situation is unique. That’s why we
-            customize our strategies to fit your individual needs and goals.
+          <p className="mt-4 max-w-xl text-gray-700 tracking-wider text-lg">
+          We take a personalized approach to financial empowerment—because no two journeys are the same. 
+          Our solutions are thoughtfully tailored to your unique goals, challenges, and long-term success.
           </p>
         </div>
         <div className="flex gap-4">
           <button
             onClick={() => scroll("left")}
-            className="w-10 h-10 rounded-full bg-white text-red-500 shadow hover:bg-red-500 hover:text-white transition"
+            className="w-10 h-10  bg-white text-red-500 shadow hover:bg-red-500 hover:text-white transition"
             aria-label="Scroll Left"
           >
             <FiArrowLeft className="mx-auto text-2xl" />
           </button>
           <button
             onClick={() => scroll("right")}
-            className="w-10 h-10 rounded-full bg-white text-red-500 shadow hover:bg-red-500 transition"
+            className="w-10 h-10  bg-white text-red-500 shadow hover:bg-red-500 transition"
             aria-label="Scroll Right"
           >
             <FiArrowRight className="mx-auto text-2xl" />
@@ -146,7 +140,7 @@ export default function FullPageScroll() {
         {sections.map((section, idx) => (
           <motion.div
             key={idx}
-            className="slide-bg flex-shrink-0 w-96 h-96 bg-white rounded-xl p-6 text-black shadow-lg cursor-pointer flex flex-col justify-between"
+            className="slide-bg flex-shrink-0 w-96 h-96 bg-white  p-6 text-black shadow-lg cursor-pointer flex flex-col justify-between"
             style={{ scrollSnapAlign: "start" }}
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -155,11 +149,11 @@ export default function FullPageScroll() {
           >
             <div>
               <div className="mb-4">{section.icon}</div>
-              <h2 className="text-2xl font-semibold mb-2">{section.title}</h2>
-              <p className="text-sm">{section.text}</p>
+              <h2 className="text-2xl font-semibold mb-2 tracking-wider">{section.title}</h2>
+              <p className="text-sm tracking-wider">{section.text}</p>
             </div>
 
-            <button onClick={handleClick} className="mt-6 inline-flex items-center gap-2 bg-white text-red-500 hover:bg-red-500 hover:text-white font-semibold px-4 py-2 rounded-full shadow-lg transition duration-300">
+            <button onClick={handleClick} className="mt-6 inline-flex items-center tracking-wider gap-2 bg-white text-red-500 hover:bg-red-500 hover:text-white font-semibold px-4 py-2  shadow-lg transition duration-300">
               Free consultation <FiArrowRight className="text-xl" />
             </button>
           </motion.div>

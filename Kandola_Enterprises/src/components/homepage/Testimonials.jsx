@@ -53,8 +53,8 @@ const Testimonials = () => {
                 {/* Top Section: Heading + Arrows */}
                 <div className="flex items-center justify-between mb-14">
                     <div>
-                        <p className="text-red-500 font-semibold text-sm tracking-widest">• TESTIMONIALS •</p>
-                        <h2 className="text-4xl md:text-5xl font-bold mt-2">Listening to our clients</h2>
+                        <p className="text-red-500 font-semibold text-sm tracking-wider">• TESTIMONIALS •</p>
+                        <h2 className="text-4xl leading-tight md:text-5xl font-bold mt-2">Listening to our clients</h2>
                     </div>
                     <div className="flex gap-4">
                         <button
@@ -75,23 +75,23 @@ const Testimonials = () => {
                 <Slider {...settings} ref={sliderRef}>
                     {testimonials.map((item, idx) => (
                         <div key={idx} className="px-4 h-full">
-                            <div className="bg-gray-300 rounded-xl p-8 shadow-md min-h-[420px] max-h-[420px] overflow-y-auto flex flex-col h-full">
+                            <div className="bg-gray-300  p-8 shadow-md min-h-[420px] max-h-[420px] overflow-y-auto flex flex-col h-full">
                                 {/* Text + Quote icon */}
                                 <div className="flex items-start gap-4 mb-auto">
                                     <div className="flex-shrink-0 w-12 h-12 flex items-center justify-center">
                                         <FaQuoteLeft className="text-4xl text-red-500" />
                                     </div>
-                                    <p className="text-gray-700 text-base leading-relaxed">{item.text}</p>
+                                    <p className="text-gray-700 text-base tracking-wider">{item.text}</p>
                                 </div>
 
                                 {/* Line + Footer */}
                                 <div>
                                     <hr className="mb-6" />
-                                    <div className="flex items-center gap-4">
+                                    <div className="flex items-center tracking-wider gap-4">
                                         <img
                                             src={item.image}
                                             alt={item.name}
-                                            className="w-14 h-14 rounded-full object-cover"
+                                            className="w-14 h-14  object-cover"
                                         />
                                         <div>
                                             <div className="flex gap-1 mb-1">
@@ -99,8 +99,8 @@ const Testimonials = () => {
                                                     <FaStar key={i} className="text-red-500 text-2xl" />
                                                 ))}
                                             </div>
-                                            <h4 className="font-semibold text-lg">{item.name}</h4>
-                                            <p className="text-gray-500 text-sm">{item.role}</p>
+                                            <h4 className="font-semibold tracking-wider text-lg">{item.name}</h4>
+                                            <p className="text-gray-500 tracking-wider text-sm">{item.role}</p>
                                         </div>
                                     </div>
                                 </div>

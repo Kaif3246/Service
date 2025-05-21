@@ -3,7 +3,7 @@ import { FaFacebookF, FaInstagram, FaTwitter } from 'react-icons/fa';
 
 const Footer = () => {
     return (
-        <footer className="bg-[#0d1321] text-white px-10 pt-20  border-t border-white/20">
+        <footer className="bg-[#0d1321] text-white  tracking-wider px-10 pt-20  border-t border-white/20">
             <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10 pb-10">
 
                 {/* Office Info */}
@@ -15,7 +15,7 @@ const Footer = () => {
                         PMB 233332
                         Wilmington,<br /> Delaware 19802-4447 US
                         </p>
-                        <p className="text-base mt-2">+1 git 9494316385</p>
+                        <p className="text-base mt-2">+1 9494316385</p>
                     </div>
                     <div>
                         <p className="text-gray-400 text-lg font-semibold"></p>
@@ -60,11 +60,11 @@ const Footer = () => {
                         <input
                             type="email"
                             placeholder="Enter your email"
-                            className="px-4 py-3 bg-gray-800 text-base rounded-md focus:outline-none"
+                            className="px-4 py-3 bg-gray-800 text-base  focus:outline-none"
                         />
                         <button
                             type="submit"
-                            className="bg-white text-red-500 hover:bg-red-500 hover:text-white px-4 py-3 rounded-md text-base font-medium"
+                            className="bg-white text-red-500 hover:bg-red-500 hover:text-white px-4 py-3  text-base font-medium"
                         >
                             Subscribe
                         </button>
@@ -77,7 +77,7 @@ const Footer = () => {
             <div className="border-t border-white/20 pt-6 mt-6 pb-6">
                 <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between text-sm text-gray-400 gap-4">
                     {/* Left */}
-                    <div>© 2025 Kandola. All rights reserved.</div>
+                    <div>© 2025 Kandola Enterprises LLC. All rights reserved.</div>
 
                     {/* Center - Social Icons */}
                     <div className="flex space-x-4 text-white">

@@ -9,17 +9,17 @@ const FunFacts = () => {
   ];
 
   return (
-    <section className="bg-gray-300 py-20 mt-10">
+    <section className="bg-gray-300 min-h-screen py-20 mt-10">
       <div className="text-center mb-16">
-        <p className="text-red-500 text-sm font-semibold tracking-widest">• FUN FACTS •</p>
-        <h2 className="text-4xl md:text-5xl font-bold mt-2">Exploring fun tidbits and<br />fascinating facts</h2>
+
+        <h2 className="text-4xl leading-tight md:text-5xl font-bold mt-2">Exploring fun tidbits and<br />fascinating facts</h2>
       </div>
 
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-6 px-6">
         {stats.map((stat, idx) => (
-          <div key={idx} className="bg-white rounded-xl shadow-md py-10 text-center border border-gray-200">
-            <h3 className="text-6xl font-bold text-gray-900">{stat.number}</h3>
-            <p className="text-gray-500 mt-2">{stat.label}</p>
+          <div key={idx} className="bg-white  shadow-md py-10 text-center border border-gray-200">
+            <h3 className="text-6xl font-bold tracking-wider text-gray-900">{stat.number}</h3>
+            <p className="text-gray-500 tracking-wider mt-2">{stat.label}</p>
           </div>
         ))}
       </div>

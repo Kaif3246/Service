@@ -3,7 +3,7 @@ import { FiX } from "react-icons/fi";
 import { FaUserAlt } from "react-icons/fa";
 import { MdWindow } from "react-icons/md";
 import { Link } from "react-router-dom";
-import logo from "../../assets/images/logo.jpg";
+import logo from "../../assets/images/logo.png";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -53,18 +53,13 @@ const Navbar = () => {
         }}
       >
         <Link to="/" className="flex items-center z-10">
-          <img src={logo} alt="Logo" className="h-16 mr-2 rounded-4xl" />
-          <div className="flex items-baseline">
-            <span className="font-serif text-4xl">Kan</span>
-            <span className="text-4xl "
-              style={{
-                fontFamily: '"Brush Script MT","Brush Script Std",cursive',
-               
-              }}
-            >
-              dola
-            </span>
-          </div>
+          <img src={logo} alt="Logo" className="h-16 mr-2 " />
+          <div className="flex justify-center w-full">
+  <div className="inline-flex items-baseline">
+    <span className="font-bold text-xl leading-tight">Kandola Enterprises,LLC</span>
+
+  </div>
+</div>
         </Link>
 
         <div className="hidden md:flex gap-6 items-center absolute left-1/2 -translate-x-1/2 z-0">
@@ -85,7 +80,7 @@ const Navbar = () => {
             <FaUserAlt size={20} className="text-gray-700" />
           </div>
           <Link to="/services">
-            <button className="flex items-center gap-2 border-2 border-white rounded-full px-4 py-1 hover:bg-red-500">
+            <button className="flex items-center gap-2 border-2 border-white  px-4 py-1 hover:bg-red-500">
               ➕ Consult for Business loan
             </button>
           </Link>
@@ -137,7 +132,7 @@ const Navbar = () => {
           </div>
 
           <Link to="/services" onClick={() => setMenuOpen(false)}>
-            <button className="flex items-center gap-2 border-2 border-white rounded-full px-4 py-1 hover:bg-red-500 w-full justify-center mt-4">
+            <button className="flex items-center gap-2 border-2 border-white  px-4 py-1 hover:bg-red-500 w-full justify-center mt-4">
               ➕ Consult for Business loan
             </button>
           </Link>

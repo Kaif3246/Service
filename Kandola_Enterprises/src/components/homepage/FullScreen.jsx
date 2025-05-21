@@ -168,13 +168,13 @@ const FullScreenConvexSection = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 px-6 md:px-16 items-center min-h-screen relative z-10">
                     {/* Left Text Content */}
                     <div className="z-10 space-y-2 mt-[-40px]">
-                        <h1 className="hero-text-title text-white text-5xl md:text-6xl font-bold leading-tight m-0">We Build</h1>
+                        <h1 className="hero-text-title text-white text-5xl md:text-6xl font-bold leading-tight m-0">"We Build</h1>
                         <h1 className="hero-text-title text-white text-5xl md:text-6xl font-bold leading-tight m-0">The Backend Of</h1>
-                        <h1 className="hero-text-title text-4xl md:text-5xl font-bold leading-tight text-red-500 m-0">Million-Dollar Moves</h1>
-                        <p className="hero-text-desc text-lg text-gray-300 max-w-lg pt-4">
-                            At Kandola Enterprises, we don’t just repair credit — we rebuild confidence, restore opportunities, and reshape financial futures.
+                        <h1 className="hero-text-title text-4xl md:text-5xl font-bold leading-tight text-red-500 m-0">Million-Dollar Moves"</h1>
+                        <p className="hero-text-desc text-lg text-gray-300 tracking-wider max-w-lg pt-4">
+                        At Kandola Enterprises, we elevate your financial game, reignite confidence, and open doors to new possibilities.
                         </p>
-                        <button onClick={handleClick} className="cta-button mt-6 inline-flex items-center gap-2 bg-white text-red-500 hover:bg-red-500 hover:text-white font-semibold px-6 py-3 rounded-full shadow-lg transition duration-300">
+                        <button onClick={handleClick} className="cta-button mt-6 inline-flex items-center gap-2 bg-white text-red-500 tracking-wider hover:bg-red-500 hover:text-white font-semibold px-6 py-3  shadow-lg transition duration-300">
                             <FiArrowRight className="text-xl" />
                             Free consultation
                         </button>
@@ -217,7 +217,7 @@ const FullScreenConvexSection = () => {
               fill="none"
               d="M50,50 m-40,0 a40,40 0 1,1 80,0 a40,40 0 1,1 -80,0"
             />
-            <text fontSize="15" fill="white" fontWeight="bold">
+            <text fontSize="15" fill="white" fontWeight="bold" fontFamily="leading-tight">
               <textPath href="#circlePath" startOffset="0%">
                 Subscribe • Like • Share • Watch • 
               </textPath>

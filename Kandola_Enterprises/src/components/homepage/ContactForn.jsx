@@ -63,21 +63,21 @@ const AppointmentCard = () => {
 
   return (
     <div className="min-h-screen bg-gray-300 flex items-center justify-center bg-cover bg-center px-4 py-16">
-      <div className="w-full max-w-5xl bg-white/80 backdrop-blur-md rounded-3xl shadow-2xl overflow-hidden grid grid-cols-1 md:grid-cols-2">
+      <div className="w-full max-w-5xl bg-white/80 backdrop-blur-md  shadow-2xl overflow-hidden grid grid-cols-1 md:grid-cols-2">
 
         {/* Left: Form Section */}
         <div className="p-8 md:p-10">
-          <h3 className="text-2xl font-bold mb-6 text-gray-800">Book Your Appointment</h3>
+          <h3 className="text-2xl leading-tight font-bold mb-6 text-gray-800">Book Your Appointment</h3>
 
           <form onSubmit={handleSubmit} className="space-y-4">
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 tracking-wider sm:grid-cols-2 gap-4">
               <input
                 type="text"
                 name="firstName"
                 value={formData.firstName}
                 onChange={handleChange}
                 placeholder="First Name *"
-                className="p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-400"
+                className="p-3 border border-gray-300  focus:outline-none focus:ring-2 focus:ring-red-400"
                 required
               />
               <input
@@ -86,7 +86,7 @@ const AppointmentCard = () => {
                 value={formData.lastName}
                 onChange={handleChange}
                 placeholder="Last Name *"
-                className="p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-400"
+                className="p-3 border border-gray-300  focus:outline-none focus:ring-2 focus:ring-red-400"
                 required
               />
             </div>
@@ -96,7 +96,7 @@ const AppointmentCard = () => {
               value={formData.email}
               onChange={handleChange}
               placeholder="Email Address *"
-              className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-400"
+              className="w-full p-3 border border-gray-300  focus:outline-none focus:ring-2 focus:ring-red-400"
               required
             />
             <input
@@ -105,7 +105,7 @@ const AppointmentCard = () => {
               value={formData.phone}
               onChange={handleChange}
               placeholder="Phone Number *"
-              className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-400"
+              className="w-full p-3 border border-gray-300  focus:outline-none focus:ring-2 focus:ring-red-400"
               required
             />
             <textarea
@@ -113,15 +113,15 @@ const AppointmentCard = () => {
               value={formData.comments}
               onChange={handleChange}
               placeholder="Comments / Questions"
-              className="w-full p-3 border border-gray-300 rounded-lg h-28 resize-none focus:outline-none focus:ring-2 focus:ring-red-400"
+              className="w-full p-3 border border-gray-300  h-28 resize-none focus:outline-none focus:ring-2 focus:ring-red-400"
             ></textarea>
 
-            {errorMsg && <p className="text-red-600 font-medium">{errorMsg}</p>}
+            {errorMsg && <p className="text-red-600 tracking-wider font-medium">{errorMsg}</p>}
 
             <button
               type="submit"
               disabled={loading}
-              className="w-full bg-red-500 text-white font-semibold py-3 rounded-lg hover:bg-red-600 transition disabled:opacity-50"
+              className="w-full bg-red-500 text-white tracking-wider font-semibold py-3  hover:bg-red-600 transition disabled:opacity-50"
             >
               {loading ? 'Submitting...' : 'Submit'}
             </button>
@@ -138,22 +138,23 @@ const AppointmentCard = () => {
             backgroundPosition: 'center top',
           }}
         >
-          <h2 className="text-3xl text-white font-bold mb-6">Make An Appointment</h2>
-          <p className="mb-6 text-base text-gray-300">
-            Don’t let a poor credit score hold you back any longer. Contact Cherry Credit Repairs today for your free consultation and take the first step towards a brighter financial future.
+          <h2 className="text-3xl text-white leading-tight font-bold mb-6">Make An Appointment</h2>
+          <p className="mb-6 text-base tracking-wider text-gray-300">
+          Don’t let financial challenges limit your potential. Contact Kandola Enterprises today for a free consultation and 
+          take the first step toward a stronger, more secure financial future.
           </p>
-          <ul className="space-y-2 text-sm text-gray-300 mt-10">
+          <ul className="space-y-2 text-sm tracking-wider text-gray-300 mt-10">
             <li>
-              <strong className="text-red-500">📍 Business Address:</strong> 2810 N Church St, PMB 233332, Wilmington, Delaware 19802-4447 US
+              <strong className="text-red-500 tracking-wider">📍 Business Address:</strong> 2810 N Church St, PMB 233332, Wilmington, Delaware 19802-4447 US
             </li>
             <li>
-              <strong className="text-red-500">📞 Phone:</strong> +1 9494316385
+              <strong className="text-red-500 tracking-wider">📞 Phone:</strong> +1 9494316385
             </li>
             <li>
-              <strong className="text-red-500">📧 Email:</strong> info@kandolaenterprises.com
+              <strong className="text-red-500 tracking-wider">📧 Email:</strong> info@kandolaenterprises.com
             </li>
             <li>
-              <strong className="text-red-500">🤝 In Person Meeting:</strong> Available
+              <strong className="text-red-500 tracking-wider">🤝 In Person Meeting:</strong> Available
             </li>
           </ul>
         </div>
