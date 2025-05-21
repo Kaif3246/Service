@@ -33,7 +33,7 @@ const OurCompany = () => {
 </div>
 
         {/* Right Content */}
-        <div className="w-full lg:w-1/2 lg:pl-12 flex flex-col justify-between h-[550px] lg:h-[550px] text-center">
+        <div className="w-full lg:w-1/2 lg:pl-12 flex flex-col justify-between h-[450px] lg:h-[550px] text-center">
 
           {/* Top - Kandola Enterprises */}
           
