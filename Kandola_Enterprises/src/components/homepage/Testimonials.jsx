@@ -59,13 +59,13 @@ const Testimonials = () => {
                     <div className="flex gap-4">
                         <button
                             onClick={() => sliderRef.current.slickPrev()}
-                            className="w-10 h-10 rounded-full bg-white text-red-500 shadow hover:bg-red-500 hover:text-white transition"
+                            className="w-10 h-10  bg-white text-red-500 shadow hover:bg-red-500 hover:text-white transition"
                         >
                             <FiArrowLeft className="mx-auto text-3xl" />
                         </button>
                         <button
                             onClick={() => sliderRef.current.slickNext()}
-                            className="w-10 h-10 rounded-full bg-white text-red-500 shadow hover:bg-red-500 hover:text-white transition"
+                            className="w-10 h-10  bg-white text-red-500 shadow hover:bg-red-500 hover:text-white transition"
                         >
                             <FiArrowRight className="mx-auto text-3xl" />
                         </button>

@@ -89,7 +89,7 @@ export default function FullPageScroll() {
           </button>
           <button
             onClick={() => scroll("right")}
-            className="w-10 h-10  bg-white text-red-500 shadow hover:bg-red-500 transition"
+            className="w-10 h-10  bg-white text-red-500 shadow hover:bg-red-500 hover:text-white transition"
             aria-label="Scroll Right"
           >
             <FiArrowRight className="mx-auto text-2xl" />
