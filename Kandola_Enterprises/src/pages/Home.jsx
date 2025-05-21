@@ -7,6 +7,7 @@ import FunFacts from "../components/homepage/FunFacts";
 import Testimonials from "../components/homepage/Testimonials";
 import ContactForm from "../components/homepage/ContactForn";
 import FullScreen from "../components/homepage/FullScreen";
+import HeroSection from "../components/homepage/HeroSection";
 
 const Home = () => {
   return (
@@ -38,6 +39,7 @@ const Home = () => {
       <section id="contact">
         <ContactForm />
       </section>
+   
     </>
   );
 };

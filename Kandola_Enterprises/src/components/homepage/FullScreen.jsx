@@ -110,6 +110,22 @@ const FullScreenConvexSection = () => {
 
 
     return (
+        <>
+           <style>{`
+        @keyframes dotFadeMove {
+          0%, 100% {
+            opacity: 0.3;
+            transform: translateY(0);
+          }
+          50% {
+            opacity: 1;
+            transform: translateY(-6px);
+          }
+        }
+        .animate-dotFadeMove {
+          animation: dotFadeMove 2s ease-in-out infinite;
+        }
+      `}</style>
         <section className="relative bg-white min-h-[90vh] flex items-center justify-center overflow-hidden">
             <div className="absolute inset-0 bg-black" style={{ clipPath: "inset(0 0 120px 0)" }} />
 
@@ -186,6 +202,7 @@ const FullScreenConvexSection = () => {
 
 
         </section>
+        </>
     );
 };
 
