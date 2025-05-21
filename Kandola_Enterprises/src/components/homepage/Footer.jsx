@@ -3,7 +3,7 @@ import { FaFacebookF, FaInstagram, FaTwitter } from 'react-icons/fa';
 
 const Footer = () => {
     return (
-        <footer className="bg-[#0d1321] text-white  tracking-wider px-10 pt-20  border-t border-white/20">
+        <footer className="bg-[#0d1321] text-white  px-10 pt-20  border-t border-white/20" style={{ fontFamily: '"Cabin", sans-serif' }}>
             <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10 pb-10">
 
                 {/* Office Info */}
@@ -43,7 +43,7 @@ const Footer = () => {
                     <ul className="space-y-3 text-base font-normal text-[#A9ABAA]" style={{ fontFamily: '"Cabin", sans-serif' }}>
                         <li><a href="#" className="hover:text-[#FF0000]"></a></li>
                         <li><a href="#" className="hover:text-[#FF0000]">Email: info@kandolaenterprises.com</a></li>
-                        <li><a href="#" className="hover:text-[#FF0000]">Contact no:       +1 9494316385</a></li>
+                        <li><a href="#" className="hover:text-[#FF0000]">Contact no: +1 9494316385</a></li>
                     
                     </ul>
                 </div>

@@ -78,7 +78,7 @@ const CoreFeatures = () => {
 
         <div className="relative z-10">
           {feature.icon}
-          <h3 className="text-lg font-semibold leading-tight mb-1">{feature.title}</h3>
+          <h3 className="text-lg font-semibold mb-1">{feature.title}</h3>
           <p className="text-[#A9ABAA]  font-normal">{feature.description}</p>
         </div>
       </div>

@@ -121,13 +121,13 @@ const FullScreenConvexSection = () => {
         <div className="relative z-10 w-full max-w-7xl mx-auto h-screen grid grid-cols-1 md:grid-cols-2">
           {/* Left Content */}
           <div className="flex flex-col justify-center px-8 md:px-16 py-20 bg-[#FF0000]" style={{ fontFamily: '"Cabin", sans-serif' }}>
-            <h1 className="text-white text-5xl md:text-6xl font-bold leading-tight">
+            <h1 className="text-white text-5xl md:text-6xl font-bold ">
               Take your business
             </h1>
-            <h1 className="text-white text-5xl md:text-6xl font-bold leading-tight">
+            <h1 className="text-white text-5xl md:text-6xl font-bold ">
               to next level of
             </h1>
-            <h1 className="text-white text-5xl md:text-6xl font-bold mb-4 leading-tight">
+            <h1 className="text-white text-5xl md:text-6xl font-bold mb-4 ">
               greatness
             </h1>
             <p className="text-[#A9ABAA]  font-normal text-lg max-w-lg mb-8">
