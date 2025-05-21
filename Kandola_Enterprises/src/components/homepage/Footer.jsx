@@ -8,55 +8,50 @@ const Footer = () => {
 
                 {/* Office Info */}
                 <div>
-                    <h4 className="text-2xl font-bold mb-6">Our offices</h4>
-                    <div className="mb-6">
-                        <p className="text-gray-400 text-lg font-semibold">Headquarters - 2810 N Church St</p>
+                    <h4 className="text-2xl font-semibold  mb-6 "  style={{ fontFamily: '"Cabin", sans-serif' }}>Kandola Enterprises,LLC</h4>
+                    <div className="mb-6 font-normal text-[#A9ABAA]" style={{ fontFamily: '"Cabin", sans-serif' }} >
+                        <p className="text-[#A9ABAA] text-lg">Headquarter: 2810 N Church St</p>
                         <p className="text-base leading-relaxed">
                         PMB 233332
                         Wilmington,<br /> Delaware 19802-4447 US
                         </p>
                         <p className="text-base mt-2">+1 9494316385</p>
                     </div>
-                    <div>
-                        <p className="text-gray-400 text-lg font-semibold"></p>
+                    <div className='font-normal text-[#A9ABAA]' style={{ fontFamily: '"Cabin", sans-serif' }}>
+                        <p className="text-[#A9ABAA] text-lg font-semibold"></p>
                         <p className="text-base leading-relaxed">
-                            
-                            PMB 233332
-                            Wilmington,<br />  Delaware 19802-4447 US
+                           
                         </p>
                     </div>
                 </div>
 
                 {/* Resources */}
-                <div>
-                    <h4 className="text-2xl font-bold mb-6">Resources</h4>
-                    <ul className="space-y-3 text-base">
-                        <li><a href="#" className="hover:text-blue-400">Contact us</a></li>
-                        <li><a href="#" className="hover:text-blue-400">Privacy policy</a></li>
-                        <li><a href="#" className="hover:text-blue-400">Recognitions</a></li>
-                        <li><a href="#" className="hover:text-blue-400">Careers</a></li>
-                        <li><a href="#" className="hover:text-blue-400">Team</a></li>
-                        <li><a href="#" className="hover:text-blue-400">Blog</a></li>
+                <div className='px-19'>
+                    <h4 className="text-2xl font-semibold mb-6" style={{ fontFamily: '"Cabin", sans-serif' }}>Resources</h4>
+                    <ul className="space-y-3 text-base font-normal text-[#A9ABAA]" style={{ fontFamily: '"Cabin", sans-serif' }}>
+                        <li><a href="#" className="hover:text-[#FF0000]">Privacy policy</a></li>
+                        <li><a href="#" className="hover:text-[#FF0000]">Recognitions</a></li>
+                        <li><a href="#" className="hover:text-[#FF0000]">Careers</a></li>
+                        <li><a href="#" className="hover:text-[#FF0000]">Team</a></li>
+                   
                     </ul>
                 </div>
 
                 {/* Services */}
                 <div>
-                    <h4 className="text-2xl font-bold mb-6">Services</h4>
-                    <ul className="space-y-3 text-base">
-                        <li><a href="#" className="hover:text-blue-400">Business process</a></li>
-                        <li><a href="#" className="hover:text-blue-400">Empowered leadership</a></li>
-                        <li><a href="#" className="hover:text-blue-400">Executive growth</a></li>
-                        <li><a href="#" className="hover:text-blue-400">Leadership executive</a></li>
-                        <li><a href="#" className="hover:text-blue-400">Legacy leadership</a></li>
-                        <li><a href="#" className="hover:text-blue-400">Strategic planning</a></li>
+                    <h4 className="text-2xl font-semibold mb-6" style={{ fontFamily: '"Cabin", sans-serif' }}>Contact Us</h4>
+                    <ul className="space-y-3 text-base font-normal text-[#A9ABAA]" style={{ fontFamily: '"Cabin", sans-serif' }}>
+                        <li><a href="#" className="hover:text-[#FF0000]"></a></li>
+                        <li><a href="#" className="hover:text-[#FF0000]">Email: info@kandolaenterprises.com</a></li>
+                        <li><a href="#" className="hover:text-[#FF0000]">Contact no:       +1 9494316385</a></li>
+                    
                     </ul>
                 </div>
 
                 {/* Newsletter */}
                 <div className="border-l border-white/20 pl-6">
-                    <h4 className="text-2xl font-bold mb-6">Subscribe to our newsletter</h4>
-                    <form className="flex flex-col gap-3">
+                    <h4 className="text-2xl font-semibold mb-6" style={{ fontFamily: '"Cabin", sans-serif' }}>Subscribe to our newsletter</h4>
+                    <form className="flex flex-col gap-3 text-normal" style={{ fontFamily: '"Cabin", sans-serif' }}>
                         <input
                             type="email"
                             placeholder="Enter your email"
@@ -64,7 +59,7 @@ const Footer = () => {
                         />
                         <button
                             type="submit"
-                            className="bg-white text-red-500 hover:bg-red-500 hover:text-white px-4 py-3  text-base font-medium"
+                            className="bg-white text-[#FF0000] hover:bg-[#FF0000] hover:text-white px-4 py-3  text-base font-medium"
                         >
                             Subscribe
                         </button>
@@ -74,10 +69,10 @@ const Footer = () => {
             </div>
 
             {/* Bottom Bar */}
-            <div className="border-t border-white/20 pt-6 mt-6 pb-6">
+            <div className="border-t border-white/20 pt-6 mt-6 pb-6 font-normal" style={{ fontFamily: '"Cabin", sans-serif' }}>
                 <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between text-sm text-gray-400 gap-4">
                     {/* Left */}
-                    <div>© 2025 Kandola Enterprises LLC. All rights reserved.</div>
+                    <div >© 2025 Kandola Enterprises LLC. All rights reserved.</div>
 
                     {/* Center - Social Icons */}
                     <div className="flex space-x-4 text-white">
@@ -88,8 +83,8 @@ const Footer = () => {
 
                     {/* Right */}
                     <div className="flex space-x-4">
-                        <a href="#" className="hover:text-blue-400">Policy & Privacy</a>
-                        <a href="#" className="hover:text-blue-400">Terms & Condition</a>
+                        <a href="#" className="hover:text-[#FF0000]">Policy & Privacy</a>
+                        <a href="#" className="hover:text-[#FF0000]">Terms & Condition</a>
                     </div>
                 </div>
             </div>

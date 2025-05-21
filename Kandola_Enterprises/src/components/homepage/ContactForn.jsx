@@ -62,22 +62,22 @@ const AppointmentCard = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-300 flex items-center justify-center bg-cover bg-center px-4 py-16">
-      <div className="w-full max-w-5xl bg-white/80 backdrop-blur-md  shadow-2xl overflow-hidden grid grid-cols-1 md:grid-cols-2">
+    <div className="min-h-screen bg-white flex items-center justify-center bg-cover bg-center px-4 py-16" style={{ fontFamily: '"Cabin", sans-serif' }}>
+      <div className="w-full max-w-5xl bg-white backdrop-blur-md  shadow-2xl overflow-hidden grid grid-cols-1 md:grid-cols-2">
 
         {/* Left: Form Section */}
         <div className="p-8 md:p-10">
-          <h3 className="text-2xl leading-tight font-bold mb-6 text-gray-800">Book Your Appointment</h3>
+          <h3 className="text-2xl leading-tight font-semibold mb-6 text-[#A9ABAA]">Book Your Appointment</h3>
 
           <form onSubmit={handleSubmit} className="space-y-4">
-            <div className="grid grid-cols-1 tracking-wider sm:grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 font-normal  sm:grid-cols-2 gap-4">
               <input
                 type="text"
                 name="firstName"
                 value={formData.firstName}
                 onChange={handleChange}
                 placeholder="First Name *"
-                className="p-3 border border-gray-300  focus:outline-none focus:ring-2 focus:ring-red-400"
+                className="p-3 border border-[#A9ABAA]  focus:outline-none focus:ring-2 focus:ring-[#A9ABAA]"
                 required
               />
               <input
@@ -86,7 +86,7 @@ const AppointmentCard = () => {
                 value={formData.lastName}
                 onChange={handleChange}
                 placeholder="Last Name *"
-                className="p-3 border border-gray-300  focus:outline-none focus:ring-2 focus:ring-red-400"
+                className="p-3 border border-[#A9ABAA]  focus:outline-none focus:ring-2 focus:ring-[#A9ABAA]"
                 required
               />
             </div>
@@ -96,7 +96,7 @@ const AppointmentCard = () => {
               value={formData.email}
               onChange={handleChange}
               placeholder="Email Address *"
-              className="w-full p-3 border border-gray-300  focus:outline-none focus:ring-2 focus:ring-red-400"
+              className="w-full p-3 border border-[#A9ABAA]  focus:outline-none focus:ring-2 focus:ring-[#A9ABAA]"
               required
             />
             <input
@@ -105,7 +105,7 @@ const AppointmentCard = () => {
               value={formData.phone}
               onChange={handleChange}
               placeholder="Phone Number *"
-              className="w-full p-3 border border-gray-300  focus:outline-none focus:ring-2 focus:ring-red-400"
+              className="w-full p-3 border border-[#A9ABAA] focus:outline-none focus:ring-2 focus:ring-[#A9ABAA]"
               required
             />
             <textarea
@@ -113,15 +113,15 @@ const AppointmentCard = () => {
               value={formData.comments}
               onChange={handleChange}
               placeholder="Comments / Questions"
-              className="w-full p-3 border border-gray-300  h-28 resize-none focus:outline-none focus:ring-2 focus:ring-red-400"
+              className="w-full p-3 border border-[#A9ABAA]  h-28 resize-none focus:outline-none focus:ring-2 focus:ring-[#A9ABAA]"
             ></textarea>
 
-            {errorMsg && <p className="text-red-600 tracking-wider font-medium">{errorMsg}</p>}
+            {errorMsg && <p className="text-[#FF0000] tracking-wider font-medium">{errorMsg}</p>}
 
             <button
               type="submit"
               disabled={loading}
-              className="w-full bg-red-500 text-white tracking-wider font-semibold py-3  hover:bg-red-600 transition disabled:opacity-50"
+              className="w-full bg-[#FF0000] text-white  font-normal py-3  hover:bg-red-600 transition disabled:opacity-50"
             >
               {loading ? 'Submitting...' : 'Submit'}
             </button>
@@ -138,23 +138,23 @@ const AppointmentCard = () => {
             backgroundPosition: 'center top',
           }}
         >
-          <h2 className="text-3xl text-white leading-tight font-bold mb-6">Make An Appointment</h2>
-          <p className="mb-6 text-base tracking-wider text-gray-300">
+          <h2 className="text-3xl text-[#A9ABAA] leading-tight font-bold mb-6">Make An Appointment</h2>
+          <p className="mb-6 text-base font-normal  text-[#A9ABAA]">
           Don’t let financial challenges limit your potential. Contact Kandola Enterprises today for a free consultation and 
           take the first step toward a stronger, more secure financial future.
           </p>
-          <ul className="space-y-2 text-sm tracking-wider text-gray-300 mt-10">
+          <ul className="space-y-2 text-sm text-[#A9ABAA] font-normal mt-10">
             <li>
-              <strong className="text-red-500 tracking-wider">📍 Business Address:</strong> 2810 N Church St, PMB 233332, Wilmington, Delaware 19802-4447 US
+              <strong className="text-[#FF0000] font-normal">📍 Business Address:</strong > 2810 N Church St, PMB 233332, Wilmington, Delaware 19802-4447 US
             </li>
             <li>
-              <strong className="text-red-500 tracking-wider">📞 Phone:</strong> +1 9494316385
+              <strong className="text-[#FF0000] font-normal">📞 Phone:</strong> +1 9494316385
             </li>
             <li>
-              <strong className="text-red-500 tracking-wider">📧 Email:</strong> info@kandolaenterprises.com
+              <strong className="text-[#FF0000] font-normal ">📧 Email:</strong> info@kandolaenterprises.com
             </li>
             <li>
-              <strong className="text-red-500 tracking-wider">🤝 In Person Meeting:</strong> Available
+              <strong className="text-[#FF0000] font-normal">🤝 In Person Meeting:</strong> Available
             </li>
           </ul>
         </div>

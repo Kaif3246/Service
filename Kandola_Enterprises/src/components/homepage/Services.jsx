@@ -17,27 +17,27 @@ export default function FullPageScroll() {
 
   const sections = [
     {
-      icon: <FaChartLine size={50} className="text-red-500 mb-4" />,
+      icon: <FaChartLine size={50} className="text-[#e91617] mb-4" />,
       title: "Repossession",
       text: "Helping you eliminate the negative effects of repossessions on your credit.",
     },
     {
-        icon: <FaCogs size={50} className="text-red-500 mb-4" />,
+        icon: <FaCogs size={50} className="text-[#e91617] mb-4" />,
         title: "Medical Expense Management",
         text: "Supporting you in managing and negotiating medical debts to reduce financial stress.",
       },
       {
-        icon: <FaUserTie size={50} className="text-red-500 mb-4" />,
+        icon: <FaUserTie size={50} className="text-[#e91617] mb-4" />,
         title: "Financial Record Review",
         text: "Ensuring your financial records reflect accurate and up-to-date information through expert analysis and support.",
       },
       {
-        icon: <FaLightbulb size={50} className="text-red-500 mb-4" />,
+        icon: <FaLightbulb size={50} className="text-[#e91617] mb-4" />,
         title: "Debt Resolution Planning",
         text: "Creating smart settlement plans with creditors to help you regain control of your financial future.",
       },
       {
-        icon: <FaRocket size={50} className="text-red-500 mb-4" />,
+        icon: <FaRocket size={50} className="text-[#e91617] mb-4" />,
         title: "Credit & Financial Guidance",
         text: "Offering expert insight on credit usage, debt management, and financial planning for long-term success.",
       },
@@ -67,14 +67,14 @@ export default function FullPageScroll() {
   
 
   return (
-    <div className="mt-10 px-10 h-screen flex flex-col">
+    <div className="mt-10 px-10 h-screen flex flex-col" style={{ fontFamily: '"Cabin", sans-serif' }}>
       {/* Header with title and arrows */}
       <section className="mb-10 flex items-center justify-between">
-        <div>
-          <h1 className="text-5xl leading-tight font-bold text-black">
+        <div className="justify-center items-center">
+          <h1 className="text-5xl leading-tight font-bold text-[#A9ABAA]">
           Empowering You Through Tailored Support
           </h1>
-          <p className="mt-4 max-w-xl text-gray-700 tracking-wider text-lg">
+          <p className="mt-4 max-w-xl text-[#A9ABAA] font-normal text-lg">
           We take a personalized approach to financial empowerment—because no two journeys are the same. 
           Our solutions are thoughtfully tailored to your unique goals, challenges, and long-term success.
           </p>
@@ -82,14 +82,14 @@ export default function FullPageScroll() {
         <div className="flex gap-4">
           <button
             onClick={() => scroll("left")}
-            className="w-10 h-10  bg-white text-red-500 shadow hover:bg-red-500 hover:text-white transition"
+            className="w-10 h-10  bg-white text-[#FF0000] shadow hover:bg-[#FF0000] hover:text-white transition"
             aria-label="Scroll Left"
           >
             <FiArrowLeft className="mx-auto text-2xl" />
           </button>
           <button
             onClick={() => scroll("right")}
-            className="w-10 h-10  bg-white text-red-500 shadow hover:bg-red-500 hover:text-white transition"
+            className="w-10 h-10  bg-white text-[#FF0000] shadow hover:bg-[#FF0000] hover:text-white transition"
             aria-label="Scroll Right"
           >
             <FiArrowRight className="mx-auto text-2xl" />
@@ -140,25 +140,20 @@ export default function FullPageScroll() {
         {sections.map((section, idx) => (
          <motion.div
          key={idx}
-         className="slide-bg flex-shrink-0 w-72 h-80 bg-white p-4 text-black shadow-lg cursor-pointer flex flex-col justify-between"
+         className="slide-bg flex-shrink-0 w-72 h-80 bg-white font-normal p-4 text-black shadow-lg cursor-pointer flex flex-col justify-between"
          style={{ scrollSnapAlign: "start" }}
          initial={{ opacity: 0, y: 20 }}
          whileInView={{ opacity: 1, y: 0 }}
          transition={{ duration: 0.5, ease: "easeOut" }}
          viewport={{ once: true }}
        >
-         <div>
+         <div className="">
            <div className="mb-3">{React.cloneElement(section.icon, { size: 40 })}</div>
-           <h2 className="text-xl font-semibold mb-2 tracking-wide">{section.title}</h2>
-           <p className="text-sm text-gray-700 tracking-wide leading-relaxed">{section.text}</p>
+           <h2 className="text-xl font-semibold mb-2">{section.title}</h2>
+           <p className=" text-[#A9ABAA] font-normal">{section.text}</p>
          </div>
        
-         <button
-           onClick={handleClick}
-           className="mt-4 inline-flex items-center gap-2 bg-white text-red-500 hover:bg-red-500 hover:text-white font-medium px-3 py-1.5 text-sm shadow transition"
-         >
-           Free consultation <FiArrowRight className="text-lg" />
-         </button>
+       
        </motion.div>
        
         ))}

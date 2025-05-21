@@ -48,24 +48,24 @@ const Testimonials = () => {
     };
 
     return (
-        <section className="bg-white py-20">
+        <section className="bg-white py-20" style={{ fontFamily: '"Cabin", sans-serif' }}>
             <div className="max-w-7xl mx-auto px-6">
                 {/* Top Section: Heading + Arrows */}
                 <div className="flex items-center justify-between mb-14">
                     <div>
-                        <p className="text-red-500 font-semibold text-sm tracking-wider">• TESTIMONIALS •</p>
-                        <h2 className="text-4xl leading-tight md:text-5xl font-bold mt-2">Listening to our clients</h2>
+               
+                        <h2 className="text-4xl leading-tight md:text-5xl font-bold mt-2 text-[#A9ABAA]">Listening to our clients</h2>
                     </div>
                     <div className="flex gap-4">
                         <button
                             onClick={() => sliderRef.current.slickPrev()}
-                            className="w-10 h-10  bg-white text-red-500 shadow hover:bg-red-500 hover:text-white transition"
+                            className="w-10 h-10  bg-white text-[#FF0000] shadow hover:bg-[#FF0000] hover:text-white transition"
                         >
                             <FiArrowLeft className="mx-auto text-3xl" />
                         </button>
                         <button
                             onClick={() => sliderRef.current.slickNext()}
-                            className="w-10 h-10  bg-white text-red-500 shadow hover:bg-red-500 hover:text-white transition"
+                            className="w-10 h-10  bg-white text-[#FF0000] shadow hover:bg-[#FF0000] hover:text-white transition"
                         >
                             <FiArrowRight className="mx-auto text-3xl" />
                         </button>
@@ -74,20 +74,20 @@ const Testimonials = () => {
 
                 <Slider {...settings} ref={sliderRef}>
                     {testimonials.map((item, idx) => (
-                        <div key={idx} className="px-4 h-full">
-                            <div className="bg-gray-300  p-8 shadow-md min-h-[420px] max-h-[420px] overflow-y-auto flex flex-col h-full">
+                        <div key={idx} className="px-4 h-full font-normal">
+                            <div className="bg-white  p-8 shadow-md min-h-[420px] max-h-[420px] overflow-y-auto flex flex-col h-full">
                                 {/* Text + Quote icon */}
                                 <div className="flex items-start gap-4 mb-auto">
                                     <div className="flex-shrink-0 w-12 h-12 flex items-center justify-center">
-                                        <FaQuoteLeft className="text-4xl text-red-500" />
+                                        <FaQuoteLeft className="text-4xl text-[#FF0000]" />
                                     </div>
-                                    <p className="text-gray-700 text-base tracking-wider">{item.text}</p>
+                                    <p className="text-[#A9ABAA] text-base font-normal">{item.text}</p>
                                 </div>
 
                                 {/* Line + Footer */}
-                                <div>
+                                <div className='font-normal'>
                                     <hr className="mb-6" />
-                                    <div className="flex items-center tracking-wider gap-4">
+                                    <div className="flex items-center font-normal gap-4">
                                         <img
                                             src={item.image}
                                             alt={item.name}
@@ -96,11 +96,11 @@ const Testimonials = () => {
                                         <div>
                                             <div className="flex gap-1 mb-1">
                                                 {[...Array(item.rating)].map((_, i) => (
-                                                    <FaStar key={i} className="text-red-500 text-2xl" />
+                                                    <FaStar key={i} className="text-[#FF0000] text-2xl" />
                                                 ))}
                                             </div>
-                                            <h4 className="font-semibold tracking-wider text-lg">{item.name}</h4>
-                                            <p className="text-gray-500 tracking-wider text-sm">{item.role}</p>
+                                            <h4 className="font-semibold  text-lg">{item.name}</h4>
+                                            <p className="text-[#A9ABAA]  text-sm">{item.role}</p>
                                         </div>
                                     </div>
                                 </div>
