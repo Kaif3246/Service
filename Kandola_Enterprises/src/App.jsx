@@ -13,12 +13,16 @@ import Testimonials from './components/homepage/Testimonials';
 import ContactForm from './components/homepage/ContactForn';
 import Footer from './components/homepage/Footer';
 import FullScreen from './components/homepage/FullScreen';
+import CustomCursor from './components/homepage/CustomeCursor';
 
 function App() {
  
 
   return (
    <>
+    <div>
+      <CustomCursor />
+    </div>
    <TopBar/>
   <Navbar/>
   <Outlet/>
