@@ -127,7 +127,7 @@ const FullScreenConvexSection = () => {
             <h1 className="text-white text-5xl md:text-6xl font-bold ">
               to next level of
             </h1>
-            <h1 className="text-white text-5xl md:text-6xl font-bold mb-4 ">
+            <h1 className="text-white text-5xl md:text-6xl font-bold mb-6 ">
               greatness
             </h1>
             <p className="text-[#A9ABAA]  font-normal text-lg max-w-lg mb-8">
