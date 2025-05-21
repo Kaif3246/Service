@@ -138,25 +138,29 @@ export default function FullPageScroll() {
         `}</style>
 
         {sections.map((section, idx) => (
-          <motion.div
-            key={idx}
-            className="slide-bg flex-shrink-0 w-96 h-96 bg-white  p-6 text-black shadow-lg cursor-pointer flex flex-col justify-between"
-            style={{ scrollSnapAlign: "start" }}
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, ease: "easeOut" }}
-            viewport={{ once: true }}
-          >
-            <div>
-              <div className="mb-4">{section.icon}</div>
-              <h2 className="text-2xl font-semibold mb-2 tracking-wider">{section.title}</h2>
-              <p className="text-sm tracking-wider">{section.text}</p>
-            </div>
-
-            <button onClick={handleClick} className="mt-6 inline-flex items-center tracking-wider gap-2 bg-white text-red-500 hover:bg-red-500 hover:text-white font-semibold px-4 py-2  shadow-lg transition duration-300">
-              Free consultation <FiArrowRight className="text-xl" />
-            </button>
-          </motion.div>
+         <motion.div
+         key={idx}
+         className="slide-bg flex-shrink-0 w-72 h-80 bg-white p-4 text-black shadow-lg cursor-pointer flex flex-col justify-between"
+         style={{ scrollSnapAlign: "start" }}
+         initial={{ opacity: 0, y: 20 }}
+         whileInView={{ opacity: 1, y: 0 }}
+         transition={{ duration: 0.5, ease: "easeOut" }}
+         viewport={{ once: true }}
+       >
+         <div>
+           <div className="mb-3">{React.cloneElement(section.icon, { size: 40 })}</div>
+           <h2 className="text-xl font-semibold mb-2 tracking-wide">{section.title}</h2>
+           <p className="text-sm text-gray-700 tracking-wide leading-relaxed">{section.text}</p>
+         </div>
+       
+         <button
+           onClick={handleClick}
+           className="mt-4 inline-flex items-center gap-2 bg-white text-red-500 hover:bg-red-500 hover:text-white font-medium px-3 py-1.5 text-sm shadow transition"
+         >
+           Free consultation <FiArrowRight className="text-lg" />
+         </button>
+       </motion.div>
+       
         ))}
       </div>
     </div>

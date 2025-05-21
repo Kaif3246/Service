@@ -89,7 +89,7 @@ const OurCompany = () => {
 
           {/* CTA Button */}
           <div className="text-center lg:text-left">
-            <button className="flex items-center tracking-wider mb-10 px-6 py-3 bg-white hover:bg-red-500 hover:text-white text-red-500 font-semibold rounded-full shadow-md transition mx-auto lg:mx-0">
+            <button className="flex items-center tracking-wider mb-10 px-6 py-3 bg-white hover:bg-red-500 hover:text-white text-red-500 font-semibold  shadow-md transition mx-auto lg:mx-0">
               <FiArrowRight className="mr-2" />
               Read more
             </button>
