@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 const testimonials = [
   {
-    text:"Running a business is hard, but managing finances during a downturn is even harder, improving cash flow, and restructuring our operations. More than anything, they brought clarity to the chaos. Within six months, we turned the corner and even began scaling.",
+    text: "Running a business is hard, but managing finances during a downturn is even harder, improving cash flow, and restructuring our operations. More than anything, they brought clarity to the chaos. Within six months, we turned the corner and even began scaling.",
     name: "Jack William",
     role: "Sr. Manager",
     rating: 4,
@@ -65,13 +65,12 @@ const Testimonials = () => {
   return (
     <>
       <div className="mb-10 text-center">
-        <h2 className="text-4xl md:text-5xl font-bold  text-[#FF0000]">
+        <h2 className="text-4xl md:text-5xl font-bold text-[#FF0000]">
           Listening to our clients
         </h2>
       </div>
 
-      <div className="min-h-screen relative px-4">
-        {/* Scrollable Cards */}
+      <div className="py-10 relative px-4">
         <div
           ref={scrollRef}
           className="flex space-x-6 overflow-x-auto overflow-y-hidden scrollbar-hide"
