@@ -130,31 +130,31 @@ const AppointmentCard = () => {
 
         {/* Right: Info Section */}
         <div
-          className="bg-white p-4 md:p-10 flex flex-col justify-start"
+          className="bg-black p-4 md:p-10 flex flex-col justify-start"
           style={{
-            backgroundImage: `url(${backgroundImage})`,
+         
             backgroundRepeat: 'no-repeat',
             backgroundSize: 'cover',
             backgroundPosition: 'center top',
           }}
         >
           <h2 className="text-3xl text-[#A9ABAA] leading-tight font-bold mb-6">Make An Appointment</h2>
-          <p className="mb-6 text-base font-normal  text-[#A9ABAA]">
+          <p className="mb-6 text-lg font-normal  text-[#A9ABAA]">
           Don’t let financial challenges limit your potential. Contact Kandola Enterprises today for a free consultation and 
           take the first step toward a stronger, more secure financial future.
           </p>
-          <ul className="space-y-2 text-sm text-[#A9ABAA] font-normal mt-10">
+          <ul className="space-y-2 text-lg text-[#A9ABAA] font-normal mt-10">
             <li>
-              <strong className="text-[#FF0000] font-normal">📍 Business Address:</strong > 2810 N Church St, PMB 233332, Wilmington, Delaware 19802-4447 US
+              <strong className="text-[#FF0000] text-lg font-normal">📍 Business Address:</strong > 2810 N Church St, PMB 233332, &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Wilmington, Delaware 19802-4447 US
             </li>
             <li>
-              <strong className="text-[#FF0000] font-normal">📞 Phone:</strong> +1 9494316385
+              <strong className="text-[#FF0000] text-lg font-normal">📞 Phone:</strong> +1 9494316385
             </li>
             <li>
-              <strong className="text-[#FF0000] font-normal ">📧 Email:</strong> info@kandolaenterprises.com
+              <strong className="text-[#FF0000] text-lg font-normal ">📧 Email:</strong> info@kandolaenterprises.com
             </li>
             <li>
-              <strong className="text-[#FF0000] font-normal">🤝 In Person Meeting:</strong> Available
+              <strong className="text-[#FF0000]  text-lg font-normal">🤝 In Person Meeting:</strong> Available
             </li>
           </ul>
         </div>

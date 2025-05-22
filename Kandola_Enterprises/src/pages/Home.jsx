@@ -19,6 +19,11 @@ const Home = () => {
       <section id="features">
         <CoreFeatures />
       </section>
+      
+      <section id="services">
+        <Services />
+      </section>
+      
 
       <section id="about">
         <About/>
@@ -28,9 +33,7 @@ const Home = () => {
         <FunFacts />
       </section>
 
-      <section id="services">
-        <Services />
-      </section>
+    
 
      
 

@@ -9,18 +9,18 @@ const Service = () => {
   };
 
   return (
-    <div className="bg-black text-white px-6 py-12 flex flex-col md:flex-row items-center justify-between  shadow-lg">
+    <div className="bg-white text-white px-6 py-12 flex flex-col md:flex-row items-center justify-between  shadow-lg">
       <div className="md:w-1/2 mb-6 md:mb-0">
-        <h1 className="text-3xl md:text-4xl font-bold mb-4">
+        <h1 className="text-3xl text-black md:text-4xl font-bold mb-4">
           Compare clear <br />
-          <span className="text-red-500">small business loan options</span>
+          <span className="text-[#FF0000]">small business loan options</span>
         </h1>
-        <p className="text-lg mb-6 text-gray-300">
+        <p className="text-lg mb-6 text-black">
           Complete one easy application, and gain access to SBA 7(a) loans, term loans, invoice factoring, business credit cards, and more.
         </p>
         <button
           onClick={handleClick}
-          className="bg-white text-red-500 hover:bg-red-500 hover:text-white px-6 py-3 rounded-lg font-semibold transition"
+          className="bg-black text-red-500 hover:bg-red-500 hover:text-white px-6 py-3 text-2xl font-semibold transition"
         >
           Book Your Consultation
         </button>

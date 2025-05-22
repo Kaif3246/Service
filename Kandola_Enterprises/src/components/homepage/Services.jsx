@@ -62,13 +62,13 @@ export default function FullPageScroll() {
     <>
       {/* Heading Section */}
       <div className="mb-6 text-center">
-        <h1 className="text-4xl md:text-5xl font-bold text-[#A9ABAA] mb-4">
+        <h1 className="text-4xl md:text-5xl font-bold text-[#FF0000] mb-4">
           Empowering You Through Tailored Support
         </h1>
       </div>
 
       <div className="text-center max-w-[90%] mx-auto mb-20">
-        <p className="text-[#A9ABAA] mb-6 font-normal leading-relaxed">
+        <p className="text-[#000000] mb-6 font-normal leading-relaxed">
           We take a personalized approach to financial empowerment—because no two journeys are the same. <br />
           Our solutions are thoughtfully tailored to your unique goals, challenges, and long-term success.
         </p>
@@ -129,7 +129,7 @@ export default function FullPageScroll() {
             >
               <div>
                 <div className="mb-3">{React.cloneElement(section.icon, { size: 40 })}</div>
-                <h2 className="font-semibold mb-2">{section.title}</h2>
+                <h2 className="font-semibold text-lg mb-2">{section.title}</h2>
                 <p className="text-[#A9ABAA]">{section.text}</p>
               </div>
             </motion.div>

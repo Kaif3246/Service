@@ -65,7 +65,7 @@ const Testimonials = () => {
   return (
     <>
       <div className="mb-10 text-center">
-        <h2 className="text-4xl md:text-5xl font-bold  text-[#A9ABAA]">
+        <h2 className="text-4xl md:text-5xl font-bold  text-[#FF0000]">
           Listening to our clients
         </h2>
       </div>

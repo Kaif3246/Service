@@ -33,11 +33,11 @@ const CoreFeatures = () => {
         <>
 
             <div className="items-center px-120">
-                <h2 className="text-4xl font-bold mb-4 text-[#A9ABAA]">What We Offer</h2>
+                <h2 className="text-4xl font-bold mb-4 text-[#FF0000]">What We Offer</h2>
             </div>
             <div className="mb-5 max-w-[90%] mx-auto justify-center items-center">
 
-                <p className="text-[#A9ABAA] font-normal max-w-[90%] mx-auto">
+                <p className="text-black font-normal max-w-[90%] mx-auto">
                     At Kandola enterprises, we believe every business—no matter its size or 
                     industry—deserves the chance to succeed. Our Business Consulting services are built to empower entrepreneurs by opening doors to stronger financial opportunities. When you partner with us, you gain more than a service—you gain a committed ally focused on improving your business’s financial health, and long-term growth.
                 </p>

@@ -7,7 +7,7 @@ const OurCompany = () => {
   return (
     <>
 
-<div className="flex justify-center items-center h-full text-[#A9ABAA]" style={{ fontFamily: '"Cabin", sans-serif' }}>
+<div className="flex justify-center items-center h-full text-[#FF0000]" style={{ fontFamily: '"Cabin", sans-serif' }}>
   <h2 className="text-4xl font-bold leading-tight text-center">
     Empowering Growth Through Custom Solutions
   </h2>
@@ -37,7 +37,7 @@ const OurCompany = () => {
 
           {/* Top - Kandola Enterprises */}
           
-            <p className="text-black text-xl  font-semibold">• Kandola Enterprises •</p>
+            <p className="text-black text-xl  font-semibold">• Kandola Enterprises</p>
           
 
           {/* Middle - Main Content */}
