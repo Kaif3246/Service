@@ -40,18 +40,19 @@ const Navbar = () => {
 
   return (
     <>
+      {/* Navbar */}
       <div
-        className={`bg-[#f9f9f9] text-black py-4 px-0 flex items-center justify-between relative z-50 transition-transform duration-300 ease-in-out ${
-          sticky ? "fixed top-0 shadow-md" : ""
-        } ${showNavbar ? "translate-y-0" : "-translate-y-full"}`}
+        className={`bg-[#f9f9f9] text-black py-4 px-0 flex items-center justify-between relative z-50 transition-transform duration-300 ease-in-out 
+       ${sticky ? "sticky top-0" : ""
+          } ${showNavbar ? "translate-y-0" : "-translate-y-full"}`}
         style={{ willChange: "transform", fontFamily: '"Cabin", sans-serif' }}
       >
-        {/* Logo with extra left gap */}
-        <Link to="/" className="pl-15 flex items-center">
+        {/* Logo with left padding */}
+        <Link to="/" className="pl-[64px] flex items-center">
           <img src={logo} alt="Logo" className="h-25 w-auto" />
         </Link>
 
-        {/* Center nav items */}
+        {/* Center nav items (desktop) */}
         <nav className="hidden md:flex gap-10 items-center absolute left-1/2 transform -translate-x-1/2">
           {navItems.map((item) => (
             <a
@@ -64,13 +65,13 @@ const Navbar = () => {
           ))}
         </nav>
 
-        {/* Login button with extra right gap */}
-        <div className="hidden md:flex items-center gap-2 pr-15 cursor-pointer hover:text-[#FF0000] text-gray-900">
+        {/* Login button (desktop) */}
+        <div className="hidden md:flex items-center gap-2 pr-[64px] cursor-pointer hover:text-[#FF0000] text-gray-900">
           <span className="text-lg">Login</span>
           <FaUserAlt size={20} />
         </div>
 
-        {/* Mobile menu button with extra right gap */}
+        {/* Mobile menu button */}
         <div className="md:hidden flex items-center pr-8">
           <button
             onClick={() => setMenuOpen(true)}
@@ -83,7 +84,7 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile menu */}
+      {/* Mobile menu drawer */}
       <div
         className={`fixed top-0 right-0 h-full w-64 bg-black text-white transform transition-transform duration-300 ease-in-out shadow-lg z-50 ${
           menuOpen ? "translate-x-0" : "translate-x-full"
@@ -121,7 +122,7 @@ const Navbar = () => {
         </nav>
       </div>
 
-      {/* Overlay for mobile menu */}
+      {/* Overlay behind mobile menu */}
       {menuOpen && (
         <div
           className="fixed inset-0 bg-black opacity-50 z-40"

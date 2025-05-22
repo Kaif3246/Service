@@ -9,7 +9,7 @@ const Service = () => {
   };
 
   return (
-    <div className="bg-white text-white px-6 py-12 flex flex-col md:flex-row items-center justify-between  shadow-lg">
+    <div className="bg-white text-white px-6 py-12 flex flex-col md:flex-row items-center justify-between  shadow-lg"  style={{ fontFamily: '"Cabin", sans-serif' }}>
       <div className="md:w-1/2 mb-6 md:mb-0">
         <h1 className="text-3xl text-black md:text-4xl font-bold mb-4">
           Compare clear <br />
@@ -20,7 +20,7 @@ const Service = () => {
         </p>
         <button
           onClick={handleClick}
-          className="bg-black text-red-500 hover:bg-red-500 hover:text-white px-6 py-3 text-2xl font-semibold transition"
+          className="bg-black text-[#FF0000] hover:bg-[#FF0000] hover:text-white px-6 py-3 text-2xl font-semibold transition"
         >
           Book Your Consultation
         </button>

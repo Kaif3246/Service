@@ -57,7 +57,7 @@ const MultiStepForm = () => {
   };
 
   return (
-    <div className="min-h-screen bg-white flex flex-col items-center py-10 px-4 text-[#1a1a1a] font-sans">
+    <div className="min-h-screen bg-white flex flex-col items-center py-10 px-4 text-[#1a1a1a] "  style={{ fontFamily: '"Cabin", sans-serif' }} >
       <div className="w-full max-w-4xl border-t-4 border-black rounded-md shadow-md px-10 py-12">
         <p className="text-sm font-semibold text-black mb-2">Step {step}/3</p>
         <div className="w-full bg-[#f5f3ee] h-2 rounded mb-8">
@@ -103,7 +103,7 @@ const MultiStepForm = () => {
             <div className="text-right mb-8">
               <button
                 onClick={nextStep}
-                className="bg-black text-white px-6 py-3 rounded-md hover:bg-[#00465b]"
+                className="bg-black text-white px-6 py-3 rounded-md hover:bg-[#FF0000]"
               >
                 Next
               </button>
@@ -149,13 +149,13 @@ const MultiStepForm = () => {
               <div className="flex justify-between mt-4 mb-8">
                 <button
                   onClick={prevStep}
-                  className="bg-gray-300 text-[#1a1a1a] px-6 py-3 rounded-md hover:bg-gray-400"
+                  className="bg-[#A9AbAA] text-[#1a1a1a] px-6 py-3 rounded-md hover:bg-gray-400"
                 >
                   Back
                 </button>
                 <button
                   onClick={nextStep}
-                  className="bg-black text-white px-6 py-3 rounded-md hover:bg-[#00465b]"
+                  className="bg-black text-white px-6 py-3 rounded-md hover:bg-[#FF0000]"
                 >
                   Next
                 </button>
@@ -220,13 +220,13 @@ const MultiStepForm = () => {
             <div className="flex justify-between mt-4">
               <button
                 onClick={prevStep}
-                className="bg-gray-300 text-[#1a1a1a] px-6 py-3 rounded-md hover:bg-gray-400"
+                className="bg-[#A9AbAA] text-[#1a1a1a] px-6 py-3 rounded-md hover:bg-gray-400"
               >
                 Back
               </button>
               <button
                 onClick={handleSubmit}
-                className="bg-black text-white px-6 py-3 rounded-md hover:bg-[#00465b]"
+                className="bg-black text-white px-6 py-3 rounded-md hover:bg-[#FF0000]"
               >
                 Submit
               </button>
