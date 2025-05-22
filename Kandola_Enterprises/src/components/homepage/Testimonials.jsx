@@ -1,117 +1,136 @@
-import React, { useRef } from 'react';
-import Slider from 'react-slick';
-import { FaQuoteLeft, FaStar, FaChevronLeft, FaChevronRight } from 'react-icons/fa';
+import React, { useRef } from "react";
+import { FaQuoteLeft, FaStar } from "react-icons/fa";
 import { FiArrowRight, FiArrowLeft } from "react-icons/fi";
+import { motion } from "framer-motion";
 
 const testimonials = [
-    {
-        text: "Our experience with Solvior has been nothing short of exceptional.Our experience with Solvior has been nothing short of exceptional. Our experience with Solvior has been nothing short of exceptional. Our experience with Solvior has been nothing short of exceptional. Our experience with Solvior has been nothing short of exceptional. From day one, their team demonstrated a deep understanding of our industry and quickly identified key areas for improvement.",
-        name: "Jack William",
-        role: "Sr. Manager",
-        rating: 4,
-        image: "https://randomuser.me/api/portraits/men/32.jpg"
-    },
-    {
-        text: "Their thorough market analysis and customized strategies helped us streamline operations.Our experience with Solvior has been nothing short of exceptional. Our experience with Solvior has been nothing short of exceptional. Our experience with Solvior has been nothing short of exceptional. Our experience with Solvior has been nothing short of exceptional. We saw a significant increase in our bottom line.",
-        name: "Burdee Nicolas",
-        role: "Sr. Executive",
-        rating: 5,
-        image: "https://randomuser.me/api/portraits/men/75.jpg"
-    },
-    {
-        text: "Solvior helped us improve customer engagement through innovative digital strategies.  Our experience with Solvior has been nothing short of exceptional. Our experience with Solvior has been nothing short of exceptional. Our experience with Solvior has been nothing short of exceptional.  Our experience with Solvior has been nothing short of exceptional.We loved their data-first approach!",
-        name: "Riya Desai",
-        role: "Marketing Head",
-        rating: 5,
-        image: "https://randomuser.me/api/portraits/women/65.jpg"
-    }
+  {
+    text:"Running a business is hard, but managing finances during a downturn is even harder, improving cash flow, and restructuring our operations. More than anything, they brought clarity to the chaos. Within six months, we turned the corner and even began scaling.",
+    name: "Jack William",
+    role: "Sr. Manager",
+    rating: 4,
+    image: "https://randomuser.me/api/portraits/men/32.jpg",
+  },
+  {
+    text: "Working with Kandola Enterprises was one of the most pivotal decisions I made for my business. As a small business owner, I was struggling with inconsistent cash flow, unclear financial goals, and a complete lack of strategic direction.",
+    name: "Burdee Nicolas",
+    role: "Sr. Executive",
+    rating: 5,
+    image: "https://randomuser.me/api/portraits/men/75.jpg",
+  },
+  {
+    text: "Before I approached Kandola Enterprises, I felt completely lost. Years of medical bills, a repossessed vehicle, and poor credit decisions had left me overwhelmed. What stood out about Kandola was their non-judgmental approach — they made me feel seen, heard, and supported.",
+    name: "Riya Desai",
+    role: "Marketing Head",
+    rating: 5,
+    image: "https://randomuser.me/api/portraits/women/65.jpg",
+  },
+  {
+    text: "Running a business is hard, but managing finances during a downturn is even harder, improving cash flow, and restructuring our operations. More than anything, they brought clarity to the chaos. Within six months, we turned the corner and even began scaling.",
+    name: "Jack William",
+    role: "Sr. Manager",
+    rating: 4,
+    image: "https://randomuser.me/api/portraits/men/32.jpg",
+  },
+  {
+    text: "Before I approached Kandola Enterprises, I felt completely lost. Years of medical bills, a repossessed vehicle, and poor credit decisions had left me overwhelmed. What stood out about Kandola was their non-judgmental approach — they made me feel seen, heard, and supported.",
+    name: "Burdee Nicolas",
+    role: "Sr. Executive",
+    rating: 5,
+    image: "https://randomuser.me/api/portraits/men/75.jpg",
+  },
+  {
+    text: "Working with Kandola Enterprises was one of the most pivotal decisions I made for my business. As a small business owner, I was struggling with inconsistent cash flow, unclear financial goals, and a complete lack of strategic direction.",
+    name: "Riya Desai",
+    role: "Marketing Head",
+    rating: 5,
+    image: "https://randomuser.me/api/portraits/women/65.jpg",
+  },
 ];
 
 const Testimonials = () => {
-    const sliderRef = useRef(null);
+  const scrollRef = useRef(null);
 
-    const settings = {
-        dots: true,
-        infinite: true,
-        autoplay: true,
-        autoplaySpeed: 5000,
-        speed: 800,
-        slidesToShow: 2,
-        slidesToScroll: 1,
-        arrows: false,
-        responsive: [
-            {
-                breakpoint: 1024,
-                settings: { slidesToShow: 1 }
+  const scroll = (direction) => {
+    if (scrollRef.current) {
+      const { scrollLeft, clientWidth, scrollWidth } = scrollRef.current;
+      let scrollAmount =
+        direction === "left"
+          ? Math.max(scrollLeft - clientWidth, 0)
+          : Math.min(scrollLeft + clientWidth, scrollWidth - clientWidth);
+      scrollRef.current.scrollTo({ left: scrollAmount, behavior: "smooth" });
+    }
+  };
+
+  return (
+    <>
+      <div className="mb-10 text-center">
+        <h2 className="text-4xl md:text-5xl font-bold  text-[#A9ABAA]">
+          Listening to our clients
+        </h2>
+      </div>
+
+      <div className="min-h-screen relative px-4">
+        {/* Scrollable Cards */}
+        <div
+          ref={scrollRef}
+          className="flex space-x-6 overflow-x-auto overflow-y-hidden scrollbar-hide"
+          style={{
+            scrollSnapType: "x mandatory",
+            scrollbarWidth: "none",
+            msOverflowStyle: "none",
+          }}
+        >
+          <style>{`
+            .scrollbar-hide::-webkit-scrollbar {
+              display: none;
             }
-        ]
-    };
+          `}</style>
 
-    return (
-        <section className="bg-white py-20" style={{ fontFamily: '"Cabin", sans-serif' }}>
-            <div className="max-w-7xl mx-auto px-6">
-                {/* Top Section: Heading + Arrows */}
-                <div className="flex items-center justify-between mb-14">
-                    <div>
-               
-                        <h2 className="text-4xl leading-tight md:text-5xl font-bold mt-2 text-[#A9ABAA]">Listening to our clients</h2>
-                    </div>
-                    <div className="flex gap-4">
-                        <button
-                            onClick={() => sliderRef.current.slickPrev()}
-                            className="w-10 h-10  bg-white text-[#FF0000] shadow hover:bg-[#FF0000] hover:text-white transition"
-                        >
-                            <FiArrowLeft className="mx-auto text-3xl" />
-                        </button>
-                        <button
-                            onClick={() => sliderRef.current.slickNext()}
-                            className="w-10 h-10  bg-white text-[#FF0000] shadow hover:bg-[#FF0000] hover:text-white transition"
-                        >
-                            <FiArrowRight className="mx-auto text-3xl" />
-                        </button>
-                    </div>
+          {testimonials.map((item, idx) => (
+            <motion.div
+              key={idx}
+              className="scroll-slide flex-shrink-0 w-80 h-[420px] bg-white shadow-lg p-6 flex flex-col justify-between"
+              style={{ scrollSnapAlign: "start" }}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, ease: "easeOut" }}
+              viewport={{ once: true }}
+            >
+              <div className="flex items-start gap-4 mb-4">
+                <div className="flex-shrink-0 w-10 h-10 flex items-center justify-center">
+                  <FaQuoteLeft className="text-3xl text-[#FF0000]" />
                 </div>
+                <p className="text-[#A9ABAA] text-base font-normal">
+                  {item.text}
+                </p>
+              </div>
 
-                <Slider {...settings} ref={sliderRef}>
-                    {testimonials.map((item, idx) => (
-                        <div key={idx} className="px-4 h-full font-normal">
-                            <div className="bg-white  p-8 shadow-md min-h-[420px] max-h-[420px] overflow-y-auto flex flex-col h-full">
-                                {/* Text + Quote icon */}
-                                <div className="flex items-start gap-4 mb-auto">
-                                    <div className="flex-shrink-0 w-12 h-12 flex items-center justify-center">
-                                        <FaQuoteLeft className="text-4xl text-[#FF0000]" />
-                                    </div>
-                                    <p className="text-[#A9ABAA] text-base font-normal">{item.text}</p>
-                                </div>
-
-                                {/* Line + Footer */}
-                                <div className='font-normal'>
-                                    <hr className="mb-6" />
-                                    <div className="flex items-center font-normal gap-4">
-                                        <img
-                                            src={item.image}
-                                            alt={item.name}
-                                            className="w-14 h-14  object-cover"
-                                        />
-                                        <div>
-                                            <div className="flex gap-1 mb-1">
-                                                {[...Array(item.rating)].map((_, i) => (
-                                                    <FaStar key={i} className="text-[#FF0000] text-2xl" />
-                                                ))}
-                                            </div>
-                                            <h4 className="font-semibold  text-lg">{item.name}</h4>
-                                            <p className="text-[#A9ABAA]  text-sm">{item.role}</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    ))}
-                </Slider>
-
-            </div>
-        </section>
-    );
+              <div>
+                <hr className="my-4" />
+                <div className="flex items-center gap-4">
+                  <img
+                    src={item.image}
+                    alt={item.name}
+                    className="w-14 h-14 rounded-full object-cover"
+                  />
+                  <div>
+                    <div className="flex gap-1 mb-1">
+                      {[...Array(item.rating)].map((_, i) => (
+                        <FaStar key={i} className="text-[#FF0000] text-base" />
+                      ))}
+                    </div>
+                    <h4 className="font-semibold text-lg">{item.name}</h4>
+                    <p className="text-[#A9ABAA] text-sm">{item.role}</p>
+                  </div>
+                </div>
+              </div>
+            </motion.div>
+          ))}
+        </div>
+      </div>
+    </>
+  );
 };
 
 export default Testimonials;

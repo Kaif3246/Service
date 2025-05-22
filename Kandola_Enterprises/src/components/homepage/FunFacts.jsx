@@ -9,7 +9,7 @@ const FunFacts = () => {
   ];
 
   return (
-    <section className="min-h-[5%] py-20 mt-10" style={{ fontFamily: '"Cabin", sans-serif' }}>
+    <section className="min-h-[5%] py-20 mt-10 mb-10" style={{ fontFamily: '"Cabin", sans-serif' }}>
    
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-6 px-6">
         {stats.map((stat, idx) => (
