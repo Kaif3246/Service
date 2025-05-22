@@ -68,7 +68,7 @@ export default function FullPageScroll() {
       </div>
 
       <div className="text-center max-w-[90%] mx-auto mb-20">
-        <p className="text-[#000000] mb-6 font-normal leading-relaxed">
+        <p className="text-[#000000] mb-6 font-normal text-lg leading-relaxed">
           We take a personalized approach to financial empowerment—because no two journeys are the same. <br />
           Our solutions are thoughtfully tailored to your unique goals, challenges, and long-term success.
         </p>
