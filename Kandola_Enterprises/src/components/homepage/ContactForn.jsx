@@ -67,7 +67,7 @@ const AppointmentCard = () => {
 
         {/* Left: Form Section */}
         <div className="p-6 sm:p-8 md:p-10">
-          <h3 className="text-2xl leading-tight font-semibold mb-6 text-[#A9ABAA] text-center md:text-left">
+          <h3 className="text-2xl leading-tight font-semibold mb-6 text-[#FF0000] text-center md:text-left">
             Book Your Appointment
           </h3>
 
@@ -140,7 +140,7 @@ const AppointmentCard = () => {
             backgroundPosition: 'center top',
           }}
         >
-          <h2 className="text-2xl sm:text-3xl leading-tight font-bold mb-6">Make An Appointment</h2>
+          <h2 className="text-2xl sm:text-3xl leading-tight font-bold text-[#FF0000] mb-6">Make An Appointment</h2>
           <p className="mb-6 text-base sm:text-lg font-normal">
             Don’t let financial challenges limit your potential. Contact Kandola Enterprises today for a free consultation and 
             take the first step toward a stronger, more secure financial future.
