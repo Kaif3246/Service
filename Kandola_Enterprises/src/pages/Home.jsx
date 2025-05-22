@@ -1,7 +1,7 @@
 import React from "react";
 
 import CoreFeatures from "../components/homepage/CoreFeatures";
-import AboutCompany from "../components/homepage/AboutCompany";
+import About from "../components/homepage/About";
 import Services from "../components/homepage/Services";
 import FunFacts from "../components/homepage/FunFacts";
 import Testimonials from "../components/homepage/Testimonials";
@@ -21,9 +21,9 @@ const Home = () => {
       </section>
 
       <section id="about">
-        <AboutCompany />
+        <About/>
       </section>
-      
+
       <section id="funfacts">
         <FunFacts />
       </section>
