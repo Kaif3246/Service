@@ -7,6 +7,8 @@ import {
   FaUserTie,
   FaLightbulb,
   FaRocket,
+  FaHandsHelping,
+  FaBriefcase 
 } from "react-icons/fa";
 
 export default function FullPageScroll() {
@@ -16,28 +18,38 @@ export default function FullPageScroll() {
   const sections = [
     {
       icon: <FaChartLine size={50} className="text-[#e91617] mb-4" />,
-      title: "Repossession",
-      text: "Helping you eliminate the negative effects of repossessions on your credit.",
+      title: "Strategic Consulting",
+      text: "Tailored insights and growth plans to help business owners scale with clarity and confidence",
     },
     {
       icon: <FaCogs size={50} className="text-[#e91617] mb-4" />,
-      title: "Medical Expense Management",
-      text: "Supporting you in managing and negotiating medical debts to reduce financial stress.",
+      title: "Business Formation & Structuring",
+      text: "Guidance for new and existing businesses to properly set up or restructure for long-term success",
     },
     {
       icon: <FaUserTie size={50} className="text-[#e91617] mb-4" />,
-      title: "Financial Record Review",
-      text: "Ensuring your financial records reflect accurate and up-to-date information through expert analysis and support.",
+      title: "Funding Support & Strategy",
+      text: "Lender matching and custom funding strategies designed for your business goals",
     },
     {
       icon: <FaLightbulb size={50} className="text-[#e91617] mb-4" />,
-      title: "Debt Resolution Planning",
-      text: "Creating smart settlement plans with creditors to help you regain control of your financial future.",
+      title: "Profile and Fundability Optimization",
+      text: "Improve financial profiles to increase your chances of approval and access better funding.",
     },
     {
       icon: <FaRocket size={50} className="text-[#e91617] mb-4" />,
-      title: "Credit & Financial Guidance",
-      text: "Offering expert insight on credit usage, debt management, and financial planning for long-term success.",
+      title: "Marketing & Sales Strategy",
+      text: "Build campaigns and funnels that attract ideal clients and drive consistent revenue.",
+    },
+    {
+      icon: <FaHandsHelping size={50} className="text-[#e91617] mb-4" />,
+      title: "Compliance & Readiness ",
+      text: "Ensure you're legally protected and structurally sound for lenders and regulators",
+    },
+    {
+      icon: <FaBriefcase  size={50} className="text-[#e91617] mb-4" />,
+      title: "Systems & Digital Infrastructure",
+      text: "Create scalable back-end systems, automation, and websites that support your brand growth",
     },
   ];
 
@@ -62,13 +74,13 @@ export default function FullPageScroll() {
     <>
       {/* Heading Section */}
       <div className="mb-6 text-center">
-        <h1 className="text-4xl md:text-5xl font-bold text-[#FF0000] mb-4">
+        <h1 className="text-4xl md:text-5xl font-bold text-[#FF0000] mb-4" style={{ fontFamily: '"Cabin", sans-serif' }}>
           Empowering You Through Tailored Support
         </h1>
       </div>
 
       <div className="text-center max-w-[90%] mx-auto mb-20">
-        <p className="text-[#000000] mb-6 font-normal text-lg leading-relaxed">
+        <p className="text-[#000000] mb-6 font-normal text-lg " style={{ fontFamily: '"Cabin", sans-serif' }}>
           We take a personalized approach to financial empowerment—because no two journeys are the same. <br />
           Our solutions are thoughtfully tailored to your unique goals, challenges, and long-term success.
         </p>

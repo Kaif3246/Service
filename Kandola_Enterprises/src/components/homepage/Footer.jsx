@@ -3,11 +3,11 @@ import { FaFacebookF, FaInstagram, FaTwitter } from 'react-icons/fa';
 
 const Footer = () => {
     return (
-        <footer className="bg-black text-white px-6 sm:px-10 pt-16 sm:pt-20 border-t border-white/20" style={{ fontFamily: '"Cabin", sans-serif' }}>
+        <footer className="bg-black text-white px-6 sm:px-10 pt-16 sm:pt-20 border-t border-white/20" >
             <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 sm:gap-10 pb-12">
 
                 {/* Office Info */}
-                <div>
+                <div style={{ fontFamily: '"Cabin", sans-serif' }}>
                     <h4 className="text-2xl font-semibold mb-5" style={{ fontFamily: '"Cabin", sans-serif' }}>Kandola Enterprises, LLC</h4>
                     <div className="font-normal text-[#A9ABAA]" style={{ fontFamily: '"Cabin", sans-serif' }}>
                         <p className="text-lg hover:text-[#FF0000]">Headquarter: 2810 N Church St</p>
@@ -33,9 +33,9 @@ const Footer = () => {
                 {/* Contact Us */}
                 <div>
                     <h4 className="text-2xl font-semibold mb-5" style={{ fontFamily: '"Cabin", sans-serif' }}>Contact Us</h4>
-                    <ul className="space-y-3 text-base font-normal text-[#A9ABAA]" style={{ fontFamily: '"Cabin", sans-serif' }}>
-                        <li><a href="#" className="hover:text-[#FF0000]">Email: info@kandolaenterprises.com</a></li>
-                        <li><a href="#" className="hover:text-[#FF0000]">Contact no: +1 9494316385</a></li>
+                    <ul className="space-y-3 text-base font-normal text-[#A9ABAA]">
+                        <li><a href="#" className="hover:text-[#FF0000]"><span style={{ fontFamily: '"Cabin", sans-serif' }}>Email: info</span><span className='leading-tight text-sm'>@</span><span style={{ fontFamily: '"Cabin", sans-serif' }}>kandolaenterprises.com</span></a></li>
+                        <li><a href="#" className="hover:text-[#FF0000]" style={{ fontFamily: '"Cabin", sans-serif' }}>Contact no: +1 9494316385</a></li>
                     </ul>
                 </div>
 

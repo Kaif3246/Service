@@ -7,11 +7,7 @@ const OurCompany = () => {
   return (
     <>
 
-<div className="flex justify-center items-center h-full text-[#FF0000]" style={{ fontFamily: '"Cabin", sans-serif' }}>
-  <h2 className="text-4xl font-bold leading-tight text-center">
-    Empowering Growth Through Custom Solutions
-  </h2>
-</div>
+
 
     <section className="relative min-h-screen flex items-center overflow-hidden pt-16 pb-0 mb-5 " style={{ fontFamily: '"Cabin", sans-serif' }}>
       <div className="relative container mx-auto px-4 flex flex-col lg:flex-row items-stretch z-20">

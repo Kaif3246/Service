@@ -61,17 +61,17 @@ const AppointmentCard = () => {
   return (
     <div 
       className="min-h-screen bg-white flex items-center justify-center bg-cover bg-center px-4 py-16"
-      style={{ fontFamily: '"Cabin", sans-serif' }}
+    
     >
       <div className="w-full max-w-5xl bg-white backdrop-blur-md shadow-2xl overflow-hidden grid grid-cols-1 md:grid-cols-2 rounded-lg">
 
         {/* Left: Form Section */}
         <div className="p-6 sm:p-8 md:p-10">
-          <h3 className="text-2xl leading-tight font-semibold mb-6 text-[#FF0000] text-center md:text-left">
+          <h3 className="text-2xl leading-tight font-semibold mb-6 text-[#FF0000] text-center md:text-left"   style={{ fontFamily: '"Cabin", sans-serif' }}>
             Book Your Appointment
           </h3>
 
-          <form onSubmit={handleSubmit} className="space-y-4">
+          <form onSubmit={handleSubmit} className="space-y-4"   style={{ fontFamily: '"Cabin", sans-serif' }}>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <input
                 type="text"
@@ -123,7 +123,7 @@ const AppointmentCard = () => {
             <button
               type="submit"
               disabled={loading}
-              className="w-full bg-[#FF0000] text-white font-normal py-3 hover:bg-red-600 transition disabled:opacity-50"
+              className="w-full bg-[#FF0000] text-white font-normal py-3 hover:bg-red-600 transition disabled:opacity-50"   style={{ fontFamily: '"Cabin", sans-serif' }}
             >
               {loading ? 'Submitting...' : 'Submit'}
             </button>
@@ -132,31 +132,26 @@ const AppointmentCard = () => {
 
         {/* Right: Info Section */}
         <div
-          className="bg-black p-6 sm:p-8 md:p-10 flex flex-col justify-start text-[#A9ABAA] rounded-tr-lg rounded-br-lg"
-          style={{
-            backgroundImage: `url(${backgroundImage})`,
-            backgroundRepeat: 'no-repeat',
-            backgroundSize: 'cover',
-            backgroundPosition: 'center top',
-          }}
+          className="bg-[#A9ABAA] p-6 sm:p-8 md:p-10 flex flex-col justify-start text-black rounded-tr-lg rounded-br-lg"
+
         >
-          <h2 className="text-2xl sm:text-3xl leading-tight font-bold text-[#FF0000] mb-6">Make An Appointment</h2>
-          <p className="mb-6 text-base sm:text-lg font-normal">
+          <h2 className="text-2xl sm:text-3xl leading-tight font-bold text-[#FF0000] mb-6"   style={{ fontFamily: '"Cabin", sans-serif' }}>Make An Appointment</h2>
+          <p className="mb-6 text-base sm:text-lg font-normal"   style={{ fontFamily: '"Cabin", sans-serif' }}>
             Don’t let financial challenges limit your potential. Contact Kandola Enterprises today for a free consultation and 
             take the first step toward a stronger, more secure financial future.
           </p>
           <ul className="space-y-2 text-base sm:text-lg font-normal mt-6 sm:mt-10">
-            <li>
+          {/*  <li>
               <strong className="text-[#FF0000]">📍 Business Address:</strong> 2810 N Church St, PMB 233332, Wilmington, Delaware 19802-4447 US
+            </li> */}
+            <li>
+              <strong className="text-[#FF0000]"   style={{ fontFamily: '"Cabin", sans-serif' }}>📞 Phone:</strong> +1 9494316385
             </li>
             <li>
-              <strong className="text-[#FF0000]">📞 Phone:</strong> +1 9494316385
+              <strong className="text-[#FF0000]" style={{ fontFamily: '"Cabin", sans-serif' }}>📧 Email: </strong><span>info</span><span className='text-sm leading-tight'>@</span><span Style={{ fontFamily: '"Cabin", sans-serif' }}>kandolaenterprises.com</span>
             </li>
             <li>
-              <strong className="text-[#FF0000]">📧 Email:</strong> info@kandolaenterprises.com
-            </li>
-            <li>
-              <strong className="text-[#FF0000]">🤝 In Person Meeting:</strong> Available
+              <strong className="text-[#FF0000]"   style={{ fontFamily: '"Cabin", sans-serif' }}>🤝 In Person Meeting:</strong> Available
             </li>
           </ul>
         </div>
