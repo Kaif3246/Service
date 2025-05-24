@@ -8,6 +8,8 @@ import { IoSettingsOutline } from "react-icons/io5";
 import { CiDollar } from "react-icons/ci";
 import { FaBullhorn } from "react-icons/fa6";
 import { LuGlobe } from "react-icons/lu";
+import { AiOutlineDollar } from "react-icons/ai";
+import { IoSettings } from "react-icons/io5";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -104,7 +106,7 @@ const Navbar = () => {
                               
                               className="px-4 py-2 flex items-center gap-2 text-white hover:bg-gray-100 hover:text-[#FF0000] transition-colors duration-200"
                             >
-                              <IoSettingsOutline size={25} /> BRAND BUILDING
+                              <IoSettings  size={25} /> BRAND BUILDING
                             </Link>
                           </li>
                           <li>
@@ -112,7 +114,7 @@ const Navbar = () => {
                               
                               className="px-4 py-2 flex items-center gap-2 text-white hover:bg-gray-100 hover:text-[#FF0000] transition-colors duration-200"
                             >
-                              <CiDollar size={35} /> FUNDING AND CAPITAL OPTIMIZATION
+                              <AiOutlineDollar size={35} /> FUNDING AND CAPITAL OPTIMIZATION
                             </Link>
                           </li>
                           <li>
@@ -239,7 +241,7 @@ const Navbar = () => {
                     onClick={() => setMenuOpen(false)}
                     className="flex items-center gap-2 hover:text-[#FF0000]"
                   >
-                    <IoSettingsOutline size={25} /> BRAND BUILDING
+                    <IoSettings  size={25} /> BRAND BUILDING
                   </Link>
                 </li>
                 <li>
@@ -248,7 +250,7 @@ const Navbar = () => {
                     onClick={() => setMenuOpen(false)}
                     className="flex items-center gap-2 hover:text-[#FF0000]"
                   >
-                    <CiDollar size={45} /> FUNDING AND CAPITAL OPTIMIZATION
+                    <AiOutlineDollar size={45} /> FUNDING AND CAPITAL OPTIMIZATION
                   </Link>
                 </li>
                 <li>
