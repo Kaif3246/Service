@@ -95,7 +95,7 @@ const Navbar = () => {
                         <ul className="py-2">
                           <li>
                             <Link
-                              
+                            
                               className="px-4 py-2 flex items-center gap-2 text-white hover:bg-gray-100 hover:text-[#FF0000] transition-colors duration-200"
                             >
                               <FaChessKnight size={25} /> BUSINESS STRATEGY
@@ -103,7 +103,7 @@ const Navbar = () => {
                           </li>
                           <li>
                             <Link
-                              
+                             
                               className="px-4 py-2 flex items-center gap-2 text-white hover:bg-gray-100 hover:text-[#FF0000] transition-colors duration-200"
                             >
                               <IoSettings  size={25} /> BRAND BUILDING
@@ -111,7 +111,7 @@ const Navbar = () => {
                           </li>
                           <li>
                             <Link
-                              
+                           
                               className="px-4 py-2 flex items-center gap-2 text-white hover:bg-gray-100 hover:text-[#FF0000] transition-colors duration-200"
                             >
                               <AiOutlineDollar size={35} /> FUNDING AND CAPITAL OPTIMIZATION
@@ -119,7 +119,7 @@ const Navbar = () => {
                           </li>
                           <li>
                             <Link
-                              
+                                to="/marketing"
                               className="px-4 py-2 flex items-center gap-3 text-white hover:bg-gray-100 hover:text-[#FF0000] transition-colors duration-200"
                             >
                               <FaBullhorn size={20} /> MARKETING

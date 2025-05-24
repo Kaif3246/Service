@@ -67,7 +67,7 @@ const FullScreenConvexSection = () => {
             options with expert guidance.
           </p>
           <button
-            onClick={handleClick}
+       
             className="btn-get-started inline-flex items-center gap-2 bg-white text-black hover:bg-black hover:text-white font-normal px-6 py-3 shadow-lg transition duration-300 w-full md:w-auto"
           >
             <FiArrowRight className="text-xl" />

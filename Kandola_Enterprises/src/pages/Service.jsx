@@ -10,29 +10,34 @@ const Service = () => {
   };
 
   return (
-    <div
-      className="min-h-screen px-4 sm:px-6 md:px-10 py-10 md:py-16 flex flex-col md:flex-row items-center justify-between gap-8 shadow-lg"
-      style={{
-        fontFamily: '"Poppins", sans-serif',
-        backgroundImage: `url(${bgImage})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat',
-        color: 'white',
-      }}
-    >
-      <div className="w-full md:w-1/2 h-full  bg-opacity-60 p-6 rounded-md flex flex-col justify-center">
-        <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 leading-snug">
+    <div className="w-full min-h-screen flex flex-col">
+      {/* Background Image Section */}
+      <div
+        className="h-[50vh] w-full"
+        style={{
+          backgroundImage: `url(${bgImage})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat',
+        }}
+      ></div>
+
+      {/* Content Section with Left-to-Right Gradient */}
+      <div className="bg-gradient-to-r from-white to-[#FF0000] flex flex-col items-start text-left px-6 py-16 max-w-5xl mx-auto rounded-md shadow-lg">
+        <h1
+          className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 leading-snug"
+          style={{ fontFamily: '"Poppins", sans-serif' }}
+        >
           Compare clear <br />
           <span className="text-[#FF0000]">small business loan options</span>
         </h1>
-        <p className="text-base sm:text-lg mb-6">
+        <p className="text-lg mb-8 text-black" style={{ fontFamily: '"Poppins", sans-serif' }}>
           Complete one easy application, and gain access to SBA 7(a) loans, term loans,
           invoice factoring, business credit cards, and more.
         </p>
         <button
           onClick={handleClick}
-          className="bg-[#FF0000] text-white hover:bg-black hover:text-[#FF0000] px-6 py-3 text-lg sm:text-xl w-100 font-semibold transition"
+          className="bg-[#FF0000] text-white hover:bg-black hover:text-[#FF0000] px-8 py-4 text-lg font-semibold transition rounded"
         >
           Book Your Consultation
         </button>

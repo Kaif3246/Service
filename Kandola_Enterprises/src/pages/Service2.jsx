@@ -3,26 +3,29 @@ import bgImage from "../assets/images/building.jpg"; // Replace with your actual
 
 const BrandBuildingSection = () => {
   return (
-    <div
-      className="min-h-screen flex flex-col justify-center items-center text-white px-4 text-center"
-      style={{
-        backgroundImage: `url(${bgImage})`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
-      }}
-    >
-      {/* Heading */}
-      <h2 className="text-4xl font-bold mb-6 text-[#FF0000]">Brand Building</h2>
+    <div className="w-full">
+      {/* Background Image Only */}
+      <div
+        className="h-[50vh] w-full"
+        style={{
+          backgroundImage: `url(${bgImage})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+        }}
+      ></div>
 
-      {/* Content */}
-      <ul className="max-w-2xl text-lg text-left list-disc list-inside space-y-2 text-black bg-opacity-60 p-6 rounded-md">
-        <li>Visual identity creation (logo, fonts, color palette)</li>
-        <li>Brand voice, mission, and story development</li>
-        <li>Authority positioning for founders and businesses</li>
-        <li>Social proof and trust-building strategies</li>
-        <li>Branded asset creation (pitch decks, documents, media kits)</li>
-      </ul>
+      {/* Heading and Content Below Image with Left-to-Right Gradient */}
+      <div className="bg-gradient-to-r from-white to-[#A9ABAA] py-12 px-4 flex flex-col items-start text-left">
+        <h2 className="text-4xl font-bold text-[#FF0000] mb-8">Brand Building</h2>
+        <ul className="max-w-2xl text-lg list-disc list-inside space-y-4 text-black">
+          <li>Visual identity creation (logo, fonts, color palette)</li>
+          <li>Brand voice, mission, and story development</li>
+          <li>Authority positioning for founders and businesses</li>
+          <li>Social proof and trust-building strategies</li>
+          <li>Branded asset creation (pitch decks, documents, media kits)</li>
+        </ul>
+      </div>
     </div>
   );
 };
