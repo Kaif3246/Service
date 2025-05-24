@@ -13,7 +13,7 @@ import HeroSection from "../components/homepage/HeroSection";
 const Home = () => {
   return (
     <>
-      <section className="mb-10" id="home">
+      <section className="" id="home">
         <FullScreen />
       </section>
 
@@ -21,7 +21,7 @@ const Home = () => {
         <CoreFeatures />
       </section>
       
-      <section className="mb-6" id="services">
+      <section className="mb-10" id="services">
         <Services />
       </section>
       

@@ -93,7 +93,7 @@ const Navbar = () => {
                         <ul className="py-2">
                           <li>
                             <Link
-                              to="/business-strategy"
+                              
                               className="px-4 py-2 flex items-center gap-2 text-white hover:bg-gray-100 hover:text-[#FF0000] transition-colors duration-200"
                             >
                               <FaChessKnight size={25} /> BUSINESS STRATEGY
@@ -101,7 +101,7 @@ const Navbar = () => {
                           </li>
                           <li>
                             <Link
-                              to="/brand-building"
+                              
                               className="px-4 py-2 flex items-center gap-2 text-white hover:bg-gray-100 hover:text-[#FF0000] transition-colors duration-200"
                             >
                               <IoSettingsOutline size={25} /> BRAND BUILDING
@@ -109,7 +109,7 @@ const Navbar = () => {
                           </li>
                           <li>
                             <Link
-                              to="/funding-capital-optimization"
+                              
                               className="px-4 py-2 flex items-center gap-2 text-white hover:bg-gray-100 hover:text-[#FF0000] transition-colors duration-200"
                             >
                               <CiDollar size={35} /> FUNDING AND CAPITAL OPTIMIZATION
@@ -117,7 +117,7 @@ const Navbar = () => {
                           </li>
                           <li>
                             <Link
-                              to="/marketing"
+                              
                               className="px-4 py-2 flex items-center gap-3 text-white hover:bg-gray-100 hover:text-[#FF0000] transition-colors duration-200"
                             >
                               <FaBullhorn size={20} /> MARKETING
@@ -125,7 +125,7 @@ const Navbar = () => {
                           </li>
                           <li>
                             <Link
-                              to="/digital-architecture"
+                          
                               className="px-4 py-2 flex items-center gap-2 text-white hover:bg-gray-100 hover:text-[#FF0000] transition-colors duration-200"
                             >
                               <LuGlobe size={25} /> DIGITAL ARCHITECTURE
@@ -226,16 +226,16 @@ const Navbar = () => {
               <ul className="space-y-2 ml-4 mt-2">
                 <li>
                   <Link
-                    to="/business-strategy"
+                    
                     onClick={() => setMenuOpen(false)}
-                    className="flex items-center gap-2 hover:text-[#FF0000]"
+                    className="flex items-center gap-2 mb-2 hover:text-[#FF0000]"
                   >
-                    <FaChessKnight size={25} /> BUSINESS STRATEGY
+                    <FaChessKnight size={22} /> BUSINESS STRATEGY
                   </Link>
                 </li>
                 <li>
                   <Link
-                    to="/brand-building"
+                    
                     onClick={() => setMenuOpen(false)}
                     className="flex items-center gap-2 hover:text-[#FF0000]"
                   >
@@ -244,16 +244,16 @@ const Navbar = () => {
                 </li>
                 <li>
                   <Link
-                    to="/funding-capital-optimization"
+                    
                     onClick={() => setMenuOpen(false)}
                     className="flex items-center gap-2 hover:text-[#FF0000]"
                   >
-                    <CiDollar size={35} /> FUNDING AND CAPITAL OPTIMIZATION
+                    <CiDollar size={45} /> FUNDING AND CAPITAL OPTIMIZATION
                   </Link>
                 </li>
                 <li>
                   <Link
-                    to="/marketing"
+                    
                     onClick={() => setMenuOpen(false)}
                     className="flex items-center gap-2 hover:text-[#FF0000]"
                   >
@@ -262,7 +262,7 @@ const Navbar = () => {
                 </li>
                 <li>
                   <Link
-                    to="/digital-architecture"
+                   
                     onClick={() => setMenuOpen(false)}
                     className="flex items-center gap-2 hover:text-[#FF0000]"
                   >
