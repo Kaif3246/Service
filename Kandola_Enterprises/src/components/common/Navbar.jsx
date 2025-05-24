@@ -11,6 +11,7 @@ import { LuGlobe } from "react-icons/lu";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [solutionsOpen, setSolutionsOpen] = useState(false); // new state for mobile solutions dropdown
   const [sticky, setSticky] = useState(false);
   const lastScrollY = useRef(0);
 
@@ -210,55 +211,66 @@ const Navbar = () => {
             </a>
           ))}
 
-          <div className="text-xl mt-2">
-            <span className="block text-white font-semibold mb-2">Solutions</span>
-            <ul className="space-y-2 ml-2">
-              <li>
-                <Link
-                  to="/business-strategy"
-                  onClick={() => setMenuOpen(false)}
-                  className="flex items-center gap-2 hover:text-[#FF0000]"
-                >
-                  <FaChessKnight size={25} /> BUSINESS STRATEGY
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/brand-building"
-                  onClick={() => setMenuOpen(false)}
-                  className="flex items-center gap-2 hover:text-[#FF0000]"
-                >
-                  <IoSettingsOutline size={25} /> BRAND BUILDING
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/funding-capital-optimization"
-                  onClick={() => setMenuOpen(false)}
-                  className="flex items-center gap-2 hover:text-[#FF0000]"
-                >
-                  <CiDollar size={60} /> FUNDING AND CAPITAL OPTIMIZATION
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/marketing"
-                  onClick={() => setMenuOpen(false)}
-                  className="flex items-center gap-2 hover:text-[#FF0000]"
-                >
-                  <FaBullhorn size={20} /> MARKETING
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/digital-architecture"
-                  onClick={() => setMenuOpen(false)}
-                  className="flex items-center gap-2 hover:text-[#FF0000]"
-                >
-                  <LuGlobe size={25} /> DIGITAL ARCHITECTURE
-                </Link>
-              </li>
-            </ul>
+          {/* Solutions expandable dropdown in mobile */}
+          <div>
+            <button
+              onClick={() => setSolutionsOpen(!solutionsOpen)}
+              className="flex items-center justify-between w-full text-xl font-semibold text-white hover:text-[#FF0000] focus:outline-none"
+            >
+              <span>Solutions</span>
+              <span className={`transition-transform duration-300 ${solutionsOpen ? "rotate-90" : ""}`}>
+                ▶
+              </span>
+            </button>
+            {solutionsOpen && (
+              <ul className="space-y-2 ml-4 mt-2">
+                <li>
+                  <Link
+                    to="/business-strategy"
+                    onClick={() => setMenuOpen(false)}
+                    className="flex items-center gap-2 hover:text-[#FF0000]"
+                  >
+                    <FaChessKnight size={25} /> BUSINESS STRATEGY
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/brand-building"
+                    onClick={() => setMenuOpen(false)}
+                    className="flex items-center gap-2 hover:text-[#FF0000]"
+                  >
+                    <IoSettingsOutline size={25} /> BRAND BUILDING
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/funding-capital-optimization"
+                    onClick={() => setMenuOpen(false)}
+                    className="flex items-center gap-2 hover:text-[#FF0000]"
+                  >
+                    <CiDollar size={35} /> FUNDING AND CAPITAL OPTIMIZATION
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/marketing"
+                    onClick={() => setMenuOpen(false)}
+                    className="flex items-center gap-2 hover:text-[#FF0000]"
+                  >
+                    <FaBullhorn size={20} /> MARKETING
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/digital-architecture"
+                    onClick={() => setMenuOpen(false)}
+                    className="flex items-center gap-2 hover:text-[#FF0000]"
+                  >
+                    <LuGlobe size={25} /> DIGITAL ARCHITECTURE
+                  </Link>
+                </li>
+              </ul>
+            )}
           </div>
 
           <div
