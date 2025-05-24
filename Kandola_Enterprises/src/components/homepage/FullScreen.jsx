@@ -79,7 +79,7 @@ const FullScreenConvexSection = () => {
             </p>
             <button
               onClick={handleClick}
-              className="btn-get-started inline-flex items-center gap-2 bg-white text-black hover:bg-black hover:text-white font-normal px-4 py-2 shadow-lg transition duration-300 w-full md:w-60"
+              className="btn-get-started inline-flex items-center gap-2 bg-white text-black hover:bg-black hover:text-white font-normal px-4 py-2 shadow-lg transition duration-300 w-full md:w-60" style={{ fontFamily: '"Cabin", sans-serif' }}
             >
               <FiArrowRight className="text-xl" />
               Let's Get You Funded
