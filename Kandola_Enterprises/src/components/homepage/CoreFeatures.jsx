@@ -31,14 +31,14 @@ const features = [
 const CoreFeatures = () => {
   return (
     <>
-      <div className="flex justify-center px-4 sm:px-20 md:px-40 lg:px-60" style={{ fontFamily: '"Cabin", sans-serif' }}>
+      <div className="flex justify-center px-4 sm:px-20 md:px-40 lg:px-60" style={{ fontFamily: '"Poppins", sans-serif' }}>
         <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-[#FF0000] text-center sm:text-left">
           How We Help You Grow
         </h2>
       </div>
 
       <div className="mb-8 max-w-5xl mx-auto px-4 sm:px-6 text-center sm:text-left">
-  <p className="text-black font-normal  sm:text-lg lg:text-xl l" style={{ fontFamily: '"Cabin", sans-serif' }}>
+  <p className="text-black font-normal  sm:text-lg lg:text-xl l" style={{ fontFamily: '"Poppins", sans-serif' }}>
     At Kandola enterprises, we believe every business—no matter its size or
     industry—deserves the chance to succeed. Our Business Consulting services
     are built to empower entrepreneurs by opening doors to stronger financial
@@ -50,7 +50,7 @@ const CoreFeatures = () => {
 
       <section
         className="py-10 bg-white mb-20"
-        style={{ fontFamily: '"Cabin", sans-serif' }}
+        style={{ fontFamily: '"Poppins", sans-serif' }}
       >
         {/* Custom shake animation CSS */}
         <style>
@@ -76,7 +76,7 @@ const CoreFeatures = () => {
         </style>
 
         <div className="container mx-auto px-4 sm:px-6 max-w-5xl">
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-8" style={{ fontFamily: '"Poppins", sans-serif' }}>
             {features.map((feature, index) => (
               <div
                 key={index}

@@ -2,6 +2,7 @@ import React from "react";
 
 import CoreFeatures from "../components/homepage/CoreFeatures";
 import About from "../components/homepage/About";
+import AboutCompany from "../components/homepage/AboutCompany";
 import Services from "../components/homepage/Services";
 import FunFacts from "../components/homepage/FunFacts";
 import Testimonials from "../components/homepage/Testimonials";
@@ -12,7 +13,7 @@ import HeroSection from "../components/homepage/HeroSection";
 const Home = () => {
   return (
     <>
-      <section id="home">
+      <section className="mb-10" id="home">
         <FullScreen />
       </section>
 
@@ -20,18 +21,18 @@ const Home = () => {
         <CoreFeatures />
       </section>
       
-      <section id="services">
+      <section className="mb-6" id="services">
         <Services />
       </section>
       
 
-      <section id="about">
+      <section  id="about">
         <About/>
       </section>
 
-      <section id="funfacts">
+    {/*  <section id="funfacts">
         <FunFacts />
-      </section>
+      </section> */}
 
     
 

@@ -23,7 +23,7 @@ function App() {
     <div>
       <CustomCursor />
     </div>
-   <TopBar/>
+
   <Navbar/>
   <Outlet/>
  

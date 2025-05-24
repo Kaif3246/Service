@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import bgImage from '../assets/images/first.jpg'; // Update with your actual image path
 
 const MultiStepForm = () => {
   const [step, setStep] = useState(1);
@@ -57,8 +58,14 @@ const MultiStepForm = () => {
   };
 
   return (
-    <div className="min-h-screen bg-white flex flex-col items-center py-10 px-4 text-[#1a1a1a] "  style={{ fontFamily: '"Cabin", sans-serif' }} >
-      <div className="w-full max-w-4xl border-t-4 border-black rounded-md shadow-md px-10 py-12">
+    <div
+      className="min-h-screen bg-cover bg-center flex flex-col items-center py-20 px-4 text-[#1a1a1a]"
+      style={{
+        fontFamily: '"Poppins", sans-serif',
+        backgroundImage: `url(${bgImage})`,
+      }}
+    >
+      <div className="w-full max-w-4xl border-t-4 border-black rounded-md shadow-md px-10 py-12 bg-white bg-opacity-90">
         <p className="text-sm font-semibold text-black mb-2">Step {step}/3</p>
         <div className="w-full bg-[#f5f3ee] h-2 rounded mb-8">
           <div

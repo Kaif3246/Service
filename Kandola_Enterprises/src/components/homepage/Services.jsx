@@ -75,7 +75,7 @@ export default function FullPageScroll() {
   }, []);
 
   return (
-    <div className="px-4 flex flex-col" style={{ fontFamily: '"Cabin", sans-serif' }}>
+    <div className="px-4 flex flex-col" style={{ fontFamily: '"Poppins", sans-serif' }}>
       {/* Heading */}
       <div className="text-center mb-6">
         <h1 className="text-4xl font-bold text-[#FF0000] font-cabin">
@@ -84,7 +84,7 @@ export default function FullPageScroll() {
       </div>
 
       {/* Description */}
-      <div className="text-center max-w-[90%] mx-auto mb-8" style={{ fontFamily: '"Cabin", sans-serif' }}>
+      <div className="text-center max-w-[90%] mx-auto mb-8" style={{ fontFamily: '"Poppins", sans-serif' }}>
         <p className="text-[#000] font-normal text-lg font-cabin">
           We take a personalized approach to financial empowerment—because no two journeys are the same. <br />
           Our solutions are thoughtfully tailored to your unique goals, challenges, and long-term success.
@@ -109,8 +109,8 @@ export default function FullPageScroll() {
             
           >
             <div className="mb-3">{section.icon}</div>
-            <h2 className="font-semibold text-lg mb-2"style={{ fontFamily: '"Cabin", sans-serif' }} >{section.title}</h2>
-            <p className="text-[#A9ABAA] font-normal"style={{ fontFamily: '"Cabin", sans-serif' }}>{section.text}</p>
+            <h2 className="font-semibold text-lg mb-2"style={{ fontFamily: '"Poppins", sans-serif' }} >{section.title}</h2>
+            <p className="text-[#A9ABAA] font-normal"style={{ fontFamily: '"Poppins", sans-serif' }}>{section.text}</p>
           </div>
         ))}
       </div>

@@ -7,22 +7,22 @@ const Footer = () => {
             <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 sm:gap-10 pb-12">
 
                 {/* Office Info */}
-                <div style={{ fontFamily: '"Cabin", sans-serif' }}>
-                    <h4 className="text-2xl font-semibold mb-5" style={{ fontFamily: '"Cabin", sans-serif' }}>Kandola Enterprises, LLC</h4>
-                    <div className="font-normal text-[#A9ABAA]" style={{ fontFamily: '"Cabin", sans-serif' }}>
-                        <p className="text-lg hover:text-[#FF0000]">Headquarter: 2810 N Church St</p>
+                <div style={{ fontFamily: '"Poppins", sans-serif' }}>
+                    <h4 className="text-2xl font-semibold mb-5" style={{ fontFamily: '"Poppins", sans-serif' }}>Kandola Enterprises, LLC</h4>
+                    <div className="font-normal text-[#A9ABAA]" style={{ fontFamily: '"Poppins", sans-serif' }}>
+                        <p className="text-lg hover:text-[#FF0000]">2810 N Church St</p>
                         <p className="text-base leading-relaxed hover:text-[#FF0000]">
                             PMB 233332<br />
                             Wilmington, Delaware 19802-4447 US
                         </p>
-                        <p className="text-base mt-2 hover:text-[#FF0000]">+1 9494316385</p>
+                        <p className="text-base mt-2 hover:text-[#FF0000]">+1 (949) 431-6385</p>
                     </div>
                 </div>
 
                 {/* Resources */}
                 <div>
-                    <h4 className="text-2xl font-semibold mb-5" style={{ fontFamily: '"Cabin", sans-serif' }}>Resources</h4>
-                    <ul className="space-y-3 text-base font-normal text-[#A9ABAA]" style={{ fontFamily: '"Cabin", sans-serif' }}>
+                    <h4 className="text-2xl font-semibold mb-5" style={{ fontFamily: '"Poppins", sans-serif' }}>Resources</h4>
+                    <ul className="space-y-3 text-base font-normal text-[#A9ABAA]" style={{ fontFamily: '"Poppins", sans-serif' }}>
                         <li><a href="#" className="hover:text-[#FF0000]">Privacy policy</a></li>
                         <li><a href="#" className="hover:text-[#FF0000]">Recognitions</a></li>
                         <li><a href="#" className="hover:text-[#FF0000]">Careers</a></li>
@@ -32,17 +32,17 @@ const Footer = () => {
 
                 {/* Contact Us */}
                 <div>
-                    <h4 className="text-2xl font-semibold mb-5" style={{ fontFamily: '"Cabin", sans-serif' }}>Contact Us</h4>
+                    <h4 className="text-2xl font-semibold mb-5" style={{ fontFamily: '"Poppins", sans-serif' }}>Contact Us</h4>
                     <ul className="space-y-3 text-base font-normal text-[#A9ABAA]">
-                        <li><a href="#" className="hover:text-[#FF0000]"><span style={{ fontFamily: '"Cabin", sans-serif' }}>Email: info</span><span className='leading-tight text-sm'>@</span><span style={{ fontFamily: '"Cabin", sans-serif' }}>kandolaenterprises.com</span></a></li>
-                        <li><a href="#" className="hover:text-[#FF0000]" style={{ fontFamily: '"Cabin", sans-serif' }}>Contact no: +1 9494316385</a></li>
+                        <li><a href="#" className="hover:text-[#FF0000]"><span style={{ fontFamily: '"Poppins", sans-serif' }}>Email: info</span><span className='leading-tight text-sm'>@</span><span style={{ fontFamily: '"Cabin", sans-serif' }}>kandolaenterprises.com</span></a></li>
+                        <li><a href="#" className="hover:text-[#FF0000]" style={{ fontFamily: '"Poppins", sans-serif' }}>Contact no: +1 (949) 431-6385</a></li>
                     </ul>
                 </div>
 
                 {/* Newsletter */}
                 <div className="sm:border-l sm:border-white/20 sm:pl-6 pt-8 sm:pt-0">
-                    <h4 className="text-2xl font-semibold mb-5" style={{ fontFamily: '"Cabin", sans-serif' }}>Subscribe to our newsletter</h4>
-                    <form className="flex flex-col gap-3 text-normal" style={{ fontFamily: '"Cabin", sans-serif' }}>
+                    <h4 className="text-2xl font-semibold mb-5" style={{ fontFamily: '"Poppins", sans-serif' }}>Subscribe to our newsletter</h4>
+                    <form className="flex flex-col gap-3 text-normal" style={{ fontFamily: '"Poppins", sans-serif' }}>
                         <input
                             type="email"
                             placeholder="Enter your email"
@@ -60,7 +60,7 @@ const Footer = () => {
             </div>
 
             {/* Bottom Bar */}
-            <div className="border-t border-white/20 pt-6 mt-6 pb-6 font-normal" style={{ fontFamily: '"Cabin", sans-serif' }}>
+            <div className="border-t border-white/20 pt-6 mt-6 pb-6 font-normal" style={{ fontFamily: '"Poppins", sans-serif' }}>
                 <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between text-sm text-gray-400 gap-4">
                     {/* Left */}
                     <div className="hover:text-[#FF0000] text-[#A9ABAA] text-center md:text-left">© 2025 Kandola Enterprises LLC. All rights reserved.</div>
