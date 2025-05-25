@@ -59,7 +59,7 @@ const MultiStepForm = () => {
       />
 
       {/* Form Section */}
-      <div className="bg-gradient-to-b from-white to-gray-100 flex justify-center px-4 py-20 bg-[#f9f9f9] text-[#1a1a1a]">
+      <div className="bg-gradient-to-b from-white to-gray-100 flex justify-center px-4 py-20 text-[#1a1a1a]">
         <div className="w-full max-w-4xl border-t-4 border-black rounded-md shadow-md px-10 py-12 bg-white bg-opacity-90 transition-all duration-500 ease-in-out">
           <p className="text-sm font-semibold text-black mb-2">Step {step}/3</p>
           <div className="w-full bg-[#f5f3ee] h-2 rounded mb-8">
@@ -94,7 +94,7 @@ const MultiStepForm = () => {
                 value={formData.fundingAmount}
                 onChange={handleChange}
                 placeholder="$"
-                className="w-full border border-[#ccc] rounded px-4 py-3 mb-4"
+                className="w-full border border-[#ccc] rounded px-4 py-2 mb-4"
               />
             </div>
           </div>
@@ -137,7 +137,7 @@ const MultiStepForm = () => {
           )}
 
           {/* Step 3 */}
-          {step === 3 && (
+          {step >= 3 && (
             <>
               <h2 className="text-xl font-semibold mb-4">Contact Information</h2>
               <div className="grid md:grid-cols-2 gap-4">
@@ -154,38 +154,46 @@ const MultiStepForm = () => {
                     <option value="Client">Client</option>
                   </select>
                 </div>
-                <input
-                  type="text"
-                  name="firstName"
-                  placeholder="First Name*"
-                  value={formData.firstName}
-                  onChange={handleChange}
-                  className="w-full border border-[#ccc] rounded px-4 py-3 mb-4"
-                />
-                <input
-                  type="text"
-                  name="lastName"
-                  placeholder="Last Name*"
-                  value={formData.lastName}
-                  onChange={handleChange}
-                  className="w-full border border-[#ccc] rounded px-4 py-3 mb-4"
-                />
-                <input
-                  type="tel"
-                  name="phone"
-                  placeholder="Mobile Phone*"
-                  value={formData.phone}
-                  onChange={handleChange}
-                  className="w-full border border-[#ccc] rounded px-4 py-3 mb-4"
-                />
-                <input
-                  type="email"
-                  name="email"
-                  placeholder="Email Address*"
-                  value={formData.email}
-                  onChange={handleChange}
-                  className="w-full border border-[#ccc] rounded px-4 py-3 mb-4"
-                />
+                <div>
+                  <label className="block mb-1 font-medium">First Name*</label>
+                  <input
+                    type="text"
+                    name="firstName"
+                    value={formData.firstName}
+                    onChange={handleChange}
+                    className="w-full border border-[#ccc] rounded px-4 py-2 mb-4"
+                  />
+                </div>
+                <div>
+                  <label className="block mb-1 font-medium">Last Name*</label>
+                  <input
+                    type="text"
+                    name="lastName"
+                    value={formData.lastName}
+                    onChange={handleChange}
+                    className="w-full border border-[#ccc] rounded px-4 py-3 mb-4"
+                  />
+                </div>
+                <div>
+                  <label className="block mb-1 font-medium">Mobile Phone*</label>
+                  <input
+                    type="tel"
+                    name="phone"
+                    value={formData.phone}
+                    onChange={handleChange}
+                    className="w-full border border-[#ccc] rounded px-4 py-3 mb-4"
+                  />
+                </div>
+                <div>
+                  <label className="block mb-1 font-medium">Email Address*</label>
+                  <input
+                    type="email"
+                    name="email"
+                    value={formData.email}
+                    onChange={handleChange}
+                    className="w-full border border-[#ccc] rounded px-4 py-3 mb-4"
+                  />
+                </div>
               </div>
             </>
           )}
