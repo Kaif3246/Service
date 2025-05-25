@@ -17,8 +17,8 @@ const MarketingSection = () => {
 
       {/* Heading and Content Below Image with Left-to-Right Gradient */}
       <div className="bg-gradient-to-r from-white to-[#A9ABAA] py-12 px-4 flex flex-col items-start text-left">
-        <h2 className="text-4xl font-bold text-[#FF0000] mb-8">Marketing</h2>
-        <ul className="max-w-2xl text-lg list-disc list-inside space-y-4 text-black">
+        <h2 className="text-4xl font-bold text-[#FF0000] mb-6">Marketing</h2>
+        <ul className="max-w-2xl text-lg list-disc list-inside  text-black">
           <li>Organic & paid lead generation (Google, Meta, YouTube, etc.)</li>
           <li>Sales funnel creation and conversion copywriting</li>
           <li>Content marketing & social media positioning</li>

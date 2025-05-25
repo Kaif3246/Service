@@ -17,10 +17,10 @@ const FundingSection = () => {
 
       {/* Heading and Content Below Image with Left-to-Right Gradient */}
       <div className="bg-gradient-to-r from-white to-[#A9ABAA] py-12 px-4 flex flex-col items-start text-left">
-        <h2 className="text-4xl font-bold text-[#FF0000] mb-8">
+        <h2 className="text-4xl font-bold text-[#FF0000] mb-6">
           Funding & Capital Optimization
         </h2>
-        <ul className="max-w-2xl text-lg list-disc list-inside space-y-4 text-black">
+        <ul className="max-w-2xl text-lg list-disc list-inside  text-black">
           <li>Personal & business credit analysis</li>
           <li>Fundability audits and pre-lender optimization</li>
           <li>Business funding blueprint (cards, loans, lines of credit)</li>

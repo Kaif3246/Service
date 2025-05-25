@@ -54,7 +54,7 @@ const Navbar = () => {
           <Link to="/" className="flex items-center gap-2">
             <img src={logo} alt="Logo" className="h-10 w-auto" />
             <div className="flex flex-col justify-center  text-center">
-              <h1 className="font-bold text-lg" style={{ fontFamily: '"Poppins", sans-serif' }}>
+              <h1 className="font-bold text-lg mb-1" style={{ fontFamily: '"Poppins", sans-serif' }}>
                 KANDOLA
               </h1>
               <p className="font-semibold text-[10px] -mt-2" style={{ fontFamily: '"Poppins", sans-serif' }}>
