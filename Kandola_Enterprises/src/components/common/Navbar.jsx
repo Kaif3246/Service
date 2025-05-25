@@ -95,7 +95,7 @@ const Navbar = () => {
                         <ul className="py-2">
                           <li>
                             <Link
-                             to="/business-strategy"
+                            
                               className="px-4 py-2 flex items-center gap-2 text-white hover:bg-gray-100 hover:text-[#FF0000] transition-colors duration-200"
                             >
                               <FaChessKnight size={25} /> BUSINESS STRATEGY
@@ -103,7 +103,7 @@ const Navbar = () => {
                           </li>
                           <li>
                             <Link
-                              to="/brand-building"
+                          
                               className="px-4 py-2 flex items-center gap-2 text-white hover:bg-gray-100 hover:text-[#FF0000] transition-colors duration-200"
                             >
                               <IoSettings  size={25} /> BRAND BUILDING
@@ -111,7 +111,7 @@ const Navbar = () => {
                           </li>
                           <li>
                             <Link
-                            to="/funding-capital-optimization"
+                           
                               className="px-4 py-2 flex items-center gap-2 text-white hover:bg-gray-100 hover:text-[#FF0000] transition-colors duration-200"
                             >
                               <AiOutlineDollar size={35} /> FUNDING AND CAPITAL OPTIMIZATION
@@ -119,7 +119,7 @@ const Navbar = () => {
                           </li>
                           <li>
                             <Link
-                             to="/marketing"
+                          
                               className="px-4 py-2 flex items-center gap-3 text-white hover:bg-gray-100 hover:text-[#FF0000] transition-colors duration-200"
                             >
                               <FaBullhorn size={20} /> MARKETING
@@ -127,7 +127,7 @@ const Navbar = () => {
                           </li>
                           <li>
                             <Link
-                           to="/digital-architecture"
+                         
                               className="px-4 py-2 flex items-center gap-2 text-white hover:bg-gray-100 hover:text-[#FF0000] transition-colors duration-200"
                             >
                               <LuGlobe size={25} /> DIGITAL ARCHITECTURE
@@ -228,7 +228,7 @@ const Navbar = () => {
               <ul className="space-y-2 ml-4 mt-2">
                 <li>
                   <Link
-                      to="/business-strategy"
+                      
                     onClick={() => setMenuOpen(false)}
                     className="flex items-center gap-2 mb-2 hover:text-[#FF0000]"
                   >
@@ -237,7 +237,7 @@ const Navbar = () => {
                 </li>
                 <li>
                   <Link
-                       to="/brand-building"
+                 
                     onClick={() => setMenuOpen(false)}
                     className="flex items-center gap-2 hover:text-[#FF0000]"
                   >
@@ -246,7 +246,7 @@ const Navbar = () => {
                 </li>
                 <li>
                   <Link
-                      to="/funding-capital-optimization"
+                  
                     onClick={() => setMenuOpen(false)}
                     className="flex items-center gap-2 hover:text-[#FF0000]"
                   >
@@ -255,7 +255,7 @@ const Navbar = () => {
                 </li>
                 <li>
                   <Link
-                       to="/marketing"
+                       
                     onClick={() => setMenuOpen(false)}
                     className="flex items-center gap-2 hover:text-[#FF0000]"
                   >
@@ -264,7 +264,7 @@ const Navbar = () => {
                 </li>
                 <li>
                   <Link
-                    to="/digital-architecture" 
+                 
                     onClick={() => setMenuOpen(false)}
                     className="flex items-center gap-2 hover:text-[#FF0000]"
                   >
