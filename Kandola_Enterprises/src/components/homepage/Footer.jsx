@@ -13,7 +13,7 @@ const Footer = () => {
                         <p className="text-lg hover:text-[#FF0000]">2810 N Church St</p>
                         <p className="text-base leading-relaxed hover:text-[#FF0000]">
                             PMB 233332<br />
-                            Wilmington, Delaware 19802-4447 US
+                            Wilmington, Delaware 19802
                         </p>
                         <p className="text-base mt-2 hover:text-[#FF0000]">+1 (949) 431-6385</p>
                     </div>

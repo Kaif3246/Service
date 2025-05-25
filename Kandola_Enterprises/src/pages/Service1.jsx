@@ -6,7 +6,7 @@ const BusinessStrategySection = () => {
     <div className="w-full">
       {/* Background Image Only */}
       <div
-        className="h-[50vh] w-full"
+        className="h-[50vh] w-auto"
         style={{
           backgroundImage: `url(${bgImage})`,
           backgroundSize: "cover",

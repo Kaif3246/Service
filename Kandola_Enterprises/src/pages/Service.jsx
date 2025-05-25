@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import bgImage from '../assets/images/first.jpg';
+import bgImage from '../assets/images/first1.jpg';
 
 const Service = () => {
   const navigate = useNavigate();
@@ -13,17 +13,18 @@ const Service = () => {
     <div className="w-full min-h-screen flex flex-col">
       {/* Background Image Section */}
       <div
-        className="h-[50vh] w-full"
-        style={{
-          backgroundImage: `url(${bgImage})`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          backgroundRepeat: 'no-repeat',
-        }}
-      ></div>
+  className="h-[50vh] w-full"
+  style={{
+    backgroundImage: `url(${bgImage})`,
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    backgroundRepeat: 'no-repeat',
+  }}
+></div>
 
-      {/* Content Section with Left-to-Right Gradient */}
-      <div className="bg-gradient-to-r from-white to-[#FF0000] flex flex-col items-start text-left px-6 py-16 max-w-5xl mx-auto rounded-md shadow-lg">
+
+      {/* Content Section with Left-to-Right Gradient, full width */}
+      <div className="bg-gradient-to-r from-white to-[#A9ABAA] flex flex-col items-start text-left px-6 py-16 w-full">
         <h1
           className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 leading-snug"
           style={{ fontFamily: '"Poppins", sans-serif' }}

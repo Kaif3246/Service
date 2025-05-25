@@ -1,5 +1,5 @@
 import React from "react";
-import bgImage from "../assets/images/capital.jpg"; // Replace with your actual image path
+import bgImage from "../assets/images/capital1.jpg"; // Replace with your actual image path
 
 const FundingSection = () => {
   return (

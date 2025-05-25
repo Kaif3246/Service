@@ -1,19 +1,16 @@
 import React from "react";
-import bgImage from "../assets/images/building.jpg"; // Replace with your actual image path
+import bgImage from "../assets/images/building1.jpg"; // Replace with your actual image path
 
 const BrandBuildingSection = () => {
   return (
     <div className="w-full">
       {/* Background Image Only */}
       <div
-        className="h-[50vh] w-full"
-        style={{
-          backgroundImage: `url(${bgImage})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          backgroundRepeat: "no-repeat",
-        }}
-      ></div>
+  className="h-[70vh] sm:h-[50vh] w-full bg-cover bg-center bg-no-repeat"
+  style={{
+    backgroundImage: `url(${bgImage})`,
+  }}
+></div>
 
       {/* Heading and Content Below Image with Left-to-Right Gradient */}
       <div className="bg-gradient-to-r from-white to-[#A9ABAA] py-12 px-4 flex flex-col items-start text-left">

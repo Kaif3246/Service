@@ -138,7 +138,7 @@ const AppointmentCard = () => {
         </p>
         <ul className="space-y-2 text-base sm:text-lg mt-6" style={{ fontFamily: '"Poppins", sans-serif' }}>
           <li>
-            <strong className="text-[#FF0000]">📞 Phone:</strong> +1 9494316385
+            <strong className="text-[#FF0000]">📞 Phone:</strong> +1 (949) 431-6385
           </li>
           <li>
             <strong className="text-[#FF0000]">📧 Email:</strong> info<span className='text-sm'>@</span>kandolaenterprises.com
