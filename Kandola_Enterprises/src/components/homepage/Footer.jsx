@@ -17,10 +17,10 @@ const Footer = () => {
                     >
                         Kandola Enterprises, LLC
                     </h4>
-                    <div className="font-normal text-[#A9ABAA]"style={{ fontFamily: '"Poppins", sans-serif', whiteSpace: 'nowrap' }}>
-                        <p className="text-lg hover:text-[#FF0000]">2810 N Church St PMB 233332</p>
+                    <div className="font-normal text-[#A9ABAA]" style={{ fontFamily: '"Poppins", sans-serif', whiteSpace: 'nowrap' }}>
+                        <p className="text-base hover:text-[#FF0000]">2810 N Church St PMB 233332</p>
                         <p className="text-base  hover:text-[#FF0000]">
-                            
+
                             Wilmington, Delaware 19802
                         </p>
 
@@ -29,15 +29,15 @@ const Footer = () => {
 
                 {/* Center - Resources */}
                 <div className="mx-auto" style={{ fontFamily: '"Poppins", sans-serif', maxWidth: '300px' }}>
-  <h4 className="text-2xl font-semibold mb-5">Solutions</h4>
-  <ul className="space-y-2 text-base font-normal text-[#A9ABAA]">
-    <li><Link to="/business-strategy" className="hover:text-[#FF0000]">Business Strategy</Link></li>
-    <li><Link to="/brand-building" className="hover:text-[#FF0000]">Brand Building</Link></li>
-    <li><Link to="/funding-capital-optimization" className="hover:text-[#FF0000]">Funding and Capital <br/>Optimization</Link></li>
-    <li><Link to="/marketing" className="hover:text-[#FF0000]">Marketing</Link></li>
-    <li><Link to="/digital-architecture" className="hover:text-[#FF0000]">Digital Architecture</Link></li>
-  </ul>
-</div>
+                    <h4 className="text-2xl font-semibold mb-5">Solutions</h4>
+                    <ul className="space-y-2 text-base font-normal text-[#A9ABAA]">
+                        <li><Link to="/business-strategy" className="hover:text-[#FF0000]">Business Strategy</Link></li>
+                        <li><Link to="/brand-building" className="hover:text-[#FF0000]">Brand Building</Link></li>
+                        <li><Link to="/funding-capital-optimization" className="hover:text-[#FF0000]">Funding and Capital <br />Optimization</Link></li>
+                        <li><Link to="/marketing" className="hover:text-[#FF0000]">Marketing</Link></li>
+                        <li><Link to="/digital-architecture" className="hover:text-[#FF0000]">Digital Architecture</Link></li>
+                    </ul>
+                </div>
                 {/* Right - Contact Us */}
                 <div>
                     <h4 className="text-2xl font-semibold mb-5">Contact Us</h4>
