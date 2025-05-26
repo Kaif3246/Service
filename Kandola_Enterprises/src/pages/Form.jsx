@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import bgImage from '../assets/images/third1.jpg';
+import bgImage from '../assets/images/form.png';
 
 const MultiStepForm = () => {
   const [step, setStep] = useState(1);
@@ -54,7 +54,7 @@ const MultiStepForm = () => {
     <div style={{ fontFamily: '"Poppins", sans-serif' }}>
       {/* Image Banner */}
       <div
-        className="h-[400px] bg-cover bg-center"
+        className="h-[70vh] bg-cover bg-center"
         style={{ backgroundImage: `url(${bgImage})` }}
       />
 

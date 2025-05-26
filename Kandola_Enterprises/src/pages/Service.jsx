@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import bgImage from '../assets/images/first1.jpg';
+import bgImage from '../assets/images/service.png';
 
 const Service = () => {
   const navigate = useNavigate();
@@ -13,7 +13,7 @@ const Service = () => {
     <div className="w-full min-h-screen flex flex-col">
       {/* Background Image Section */}
       <div
-  className="h-[50vh] w-full"
+  className="h-[70vh] w-full"
   style={{
     backgroundImage: `url(${bgImage})`,
     backgroundSize: 'cover',

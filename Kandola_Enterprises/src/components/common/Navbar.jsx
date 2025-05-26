@@ -52,12 +52,12 @@ const Navbar = () => {
         {/* Left: Logo + NavItems */}
         <div className="flex items-center pl-[64px] gap-10">
           <Link to="/" className="flex items-center gap-2">
-            <img src={logo} alt="Logo" className="h-10 w-auto" />
+            <img src={logo} alt="Logo" className="h-12 w-auto" />
             <div className="flex flex-col justify-center  text-center">
-              <h1 className="font-bold text-lg mb-1" style={{ fontFamily: '"Poppins", sans-serif' }}>
+              <h1 className="font-bold text-[22px] mb-1" style={{ fontFamily: '"Poppins", sans-serif' }}>
                 KANDOLA
               </h1>
-              <p className="font-semibold text-[10px] -mt-2" style={{ fontFamily: '"Poppins", sans-serif' }}>
+              <p className="font-medium text-[12px] -mt-2" style={{ fontFamily: '"Poppins", sans-serif' }}>
                 ENTERPRISES
               </p>
             </div>
@@ -69,9 +69,8 @@ const Navbar = () => {
               <React.Fragment key={item.name}>
                 <a
                   href={item.href}
-                  className={`text-lg transition-all duration-200 ${
-                    sticky ? "text-gray-900 hover:text-[#8B0000]" : "text-white hover:text-[#FF0000]"
-                  }`}
+                  className={`text-lg transition-all duration-200 ${sticky ? "text-gray-900 hover:text-[#8B0000]" : "text-white hover:text-[#FF0000]"
+                    }`}
                 >
                   {item.name}
                 </a>
@@ -81,54 +80,60 @@ const Navbar = () => {
                     <span className={`${sticky ? "text-gray-900" : "text-white"}`}>|</span>
                     {/* Solutions Dropdown */}
                     <div className="relative group">
+
+
                       <button
-                        className={`text-lg transition-all duration-200 flex items-center gap-1 ${
-                          sticky ? "text-gray-900" : "text-white"
-                        } hover:text-[#8B0000]`}
+                        onClick={() => {
+                          const section = document.getElementById("features");
+                          if (section) section.scrollIntoView({ behavior: "smooth" });
+                        }}
+                        className={`text-lg transition-all duration-200 flex items-center gap-1 ${sticky ? "text-gray-900" : "text-white"
+                          } hover:text-[#8B0000]`}
                       >
                         Solutions ▾
                       </button>
+
                       <div
-                        className="absolute top-full left-0 mt-2 w-65 text-sm bg-[#FF0000] shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50"
+                        className="absolute top-full left-0 mt-2 w-65 text-sm bg-white shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50"
                         style={{ fontFamily: '"Poppins", sans-serif' }}
                       >
                         <ul className="py-2">
                           <li>
                             <Link
-                            
-                              className="px-4 py-2 flex items-center gap-2 text-white hover:bg-gray-100 hover:text-[#FF0000] transition-colors duration-200"
+                                to="/business-strategy"
+                              className="px-4 py-2 flex items-center gap-2 text-[#FF0000] hover:bg-gray-100 hover:text-black transition-colors duration-200"
                             >
                               <FaChessKnight size={25} /> BUSINESS STRATEGY
                             </Link>
                           </li>
                           <li>
                             <Link
-                          
-                              className="px-4 py-2 flex items-center gap-2 text-white hover:bg-gray-100 hover:text-[#FF0000] transition-colors duration-200"
+                                to="/brand-building"
+                              className="px-4 py-2 flex items-center gap-2 text-[#FF0000] hover:bg-gray-100 hover:text-black transition-colors duration-200"
                             >
-                              <IoSettings  size={25} /> BRAND BUILDING
+                              <IoSettings size={25} /> BRAND BUILDING
                             </Link>
                           </li>
                           <li>
                             <Link
-                           
-                              className="px-4 py-2 flex items-center gap-2 text-white hover:bg-gray-100 hover:text-[#FF0000] transition-colors duration-200"
+                                to="/funding-capital-optimization"
+                              className="px-4 py-2 flex items-center gap-2 text-[#FF0000] hover:bg-gray-100 hover:text-black transition-colors duration-200"
                             >
                               <AiOutlineDollar size={35} /> FUNDING AND CAPITAL OPTIMIZATION
                             </Link>
                           </li>
                           <li>
                             <Link
-                          
-                              className="px-4 py-2 flex items-center gap-3 text-white hover:bg-gray-100 hover:text-[#FF0000] transition-colors duration-200"
+                               to="/marketing"
+                              className="px-4 py-2 flex items-center gap-3 text-[#FF0000] hover:bg-gray-100 hover:text-black transition-colors duration-200"
                             >
                               <FaBullhorn size={20} /> MARKETING
                             </Link>
                           </li>
                           <li>
                             <Link
-                         
-                              className="px-4 py-2 flex items-center gap-2 text-white hover:bg-gray-100 hover:text-[#FF0000] transition-colors duration-200"
+                              to="/digital-architecture"
+                              className="px-4 py-2 flex items-center gap-2 text-[#FF0000] hover:bg-gray-100 hover:text-black transition-colors duration-200"
                             >
                               <LuGlobe size={25} /> DIGITAL ARCHITECTURE
                             </Link>
@@ -161,19 +166,46 @@ const Navbar = () => {
           />
 
           {/* Login */}
-          <div
-            className={`flex items-center gap-2 cursor-pointer hover:text-[#8B0000] ${
-              sticky ? "text-gray-900" : "text-white"
-            }`}
-          >
-            <span
-              className="text-lg"
+          <div className="relative group">
+            <div
+              className={`flex items-center gap-2 cursor-pointer hover:text-[#8B0000] ${sticky ? "text-gray-900" : "text-white"
+                }`}
+            >
+              <span className="text-lg" style={{ fontFamily: '"Poppins", sans-serif' }}>
+                Login
+              </span>
+              <FaUserAlt size={20} />
+            </div>
+
+            <div
+              className="absolute top-full right-0 mt-2 w-40 bg-white shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50"
               style={{ fontFamily: '"Poppins", sans-serif' }}
             >
-              Login
-            </span>
-            <FaUserAlt size={20} />
+              <ul className="py-2">
+                <li
+                  
+                 
+                    className="block px-4 py-2  text-[#FF0000] hover:bg-gray-100 hover:text-black transition-colors duration-200" style={{ fontFamily: '"Poppins", sans-serif' }}
+                  >
+                    STRATEGY
+                
+                </li>
+                <li>
+                  <a
+                    href="https://www.creditrestorationportal.com/Account/Login"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block px-4 py-2 text-[#FF0000] hover:bg-gray-100 hover:text-black transition-colors duration-200"
+                    style={{ fontFamily: '"Poppins", sans-serif' }}
+                  >
+                    FUNDING
+                  </a>
+                </li>
+
+              </ul>
+            </div>
           </div>
+
         </div>
 
         {/* Mobile menu button */}
@@ -191,9 +223,8 @@ const Navbar = () => {
 
       {/* Mobile Drawer */}
       <div
-        className={`fixed top-0 right-0 h-full w-64 bg-black text-white transform transition-transform duration-300 ease-in-out shadow-lg z-50 ${
-          menuOpen ? "translate-x-0" : "translate-x-full"
-        }`}
+        className={`fixed top-0 right-0 h-full w-64 bg-black text-white transform transition-transform duration-300 ease-in-out shadow-lg z-50 ${menuOpen ? "translate-x-0" : "translate-x-full"
+          }`}
         style={{ fontFamily: '"Cabin", sans-serif' }}
       >
         <div className="flex justify-end p-4">
@@ -228,7 +259,7 @@ const Navbar = () => {
               <ul className="space-y-2 ml-4 mt-2">
                 <li>
                   <Link
-                      
+
                     onClick={() => setMenuOpen(false)}
                     className="flex items-center gap-2 mb-2 hover:text-[#FF0000]"
                   >
@@ -237,16 +268,16 @@ const Navbar = () => {
                 </li>
                 <li>
                   <Link
-                 
+
                     onClick={() => setMenuOpen(false)}
                     className="flex items-center gap-2 hover:text-[#FF0000]"
                   >
-                    <IoSettings  size={25} /> BRAND BUILDING
+                    <IoSettings size={25} /> BRAND BUILDING
                   </Link>
                 </li>
                 <li>
                   <Link
-                  
+
                     onClick={() => setMenuOpen(false)}
                     className="flex items-center gap-2 hover:text-[#FF0000]"
                   >
@@ -255,7 +286,7 @@ const Navbar = () => {
                 </li>
                 <li>
                   <Link
-                       
+
                     onClick={() => setMenuOpen(false)}
                     className="flex items-center gap-2 hover:text-[#FF0000]"
                   >
@@ -264,7 +295,7 @@ const Navbar = () => {
                 </li>
                 <li>
                   <Link
-                 
+
                     onClick={() => setMenuOpen(false)}
                     className="flex items-center gap-2 hover:text-[#FF0000]"
                   >

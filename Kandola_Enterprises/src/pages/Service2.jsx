@@ -1,12 +1,12 @@
 import React from "react";
-import bgImage from "../assets/images/building1.jpg"; // Replace with your actual image path
+import bgImage from "../assets/images/branding.png"; // Replace with your actual image path
 
 const BrandBuildingSection = () => {
   return (
     <div className="w-full">
       {/* Background Image Only */}
       <div
-  className="h-[70vh] sm:h-[50vh] w-full bg-cover bg-center bg-no-repeat"
+  className="h-[70vh]  w-full bg-cover bg-center bg-no-repeat"
   style={{
     backgroundImage: `url(${bgImage})`,
   }}

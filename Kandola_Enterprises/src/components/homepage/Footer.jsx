@@ -1,62 +1,57 @@
 import React from 'react';
 import { FaFacebookF, FaInstagram, FaTwitter } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return (
         <footer className="bg-black text-white px-6 sm:px-10 pt-16 sm:pt-20 border-t border-white/20" >
-            <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 sm:gap-10 pb-12">
-
-                {/* Office Info */}
-                <div style={{ fontFamily: '"Poppins", sans-serif' }}>
-                    <h4 className="text-2xl font-semibold mb-5" style={{ fontFamily: '"Poppins", sans-serif' }}>Kandola Enterprises, LLC</h4>
-                    <div className="font-normal text-[#A9ABAA]" style={{ fontFamily: '"Poppins", sans-serif' }}>
-                        <p className="text-lg hover:text-[#FF0000]">2810 N Church St</p>
-                        <p className="text-base leading-relaxed hover:text-[#FF0000]">
-                            PMB 233332<br />
+            <div
+                className="max-w-7xl mx-auto grid grid-cols-[18rem_1fr_18rem] items-start pb-12"
+                style={{ fontFamily: '"Poppins", sans-serif' }}
+            >
+                {/* Left - Kandola Enterprises */}
+                <div>
+                    <h4
+                        className="text-2xl font-semibold mb-5"
+                        style={{ fontFamily: '"Poppins", sans-serif', whiteSpace: 'nowrap' }}
+                    >
+                        Kandola Enterprises, LLC
+                    </h4>
+                    <div className="font-normal text-[#A9ABAA]"style={{ fontFamily: '"Poppins", sans-serif', whiteSpace: 'nowrap' }}>
+                        <p className="text-lg hover:text-[#FF0000]">2810 N Church St PMB 233332</p>
+                        <p className="text-base  hover:text-[#FF0000]">
+                            
                             Wilmington, Delaware 19802
                         </p>
-                        <p className="text-base mt-2 hover:text-[#FF0000]">+1 (949) 431-6385</p>
+
                     </div>
                 </div>
 
-                {/* Resources */}
+                {/* Center - Resources */}
+                <div className="mx-auto" style={{ fontFamily: '"Poppins", sans-serif', maxWidth: '300px' }}>
+  <h4 className="text-2xl font-semibold mb-5">Solutions</h4>
+  <ul className="space-y-2 text-base font-normal text-[#A9ABAA]">
+    <li><Link to="/business-strategy" className="hover:text-[#FF0000]">Business Strategy</Link></li>
+    <li><Link to="/brand-building" className="hover:text-[#FF0000]">Brand Building</Link></li>
+    <li><Link to="/funding-capital-optimization" className="hover:text-[#FF0000]">Funding and Capital <br/>Optimization</Link></li>
+    <li><Link to="/marketing" className="hover:text-[#FF0000]">Marketing</Link></li>
+    <li><Link to="/digital-architecture" className="hover:text-[#FF0000]">Digital Architecture</Link></li>
+  </ul>
+</div>
+                {/* Right - Contact Us */}
                 <div>
-                    <h4 className="text-2xl font-semibold mb-5" style={{ fontFamily: '"Poppins", sans-serif' }}>Resources</h4>
-                    <ul className="space-y-3 text-base font-normal text-[#A9ABAA]" style={{ fontFamily: '"Poppins", sans-serif' }}>
-                        <li><a href="#" className="hover:text-[#FF0000]">Privacy policy</a></li>
-                        <li><a href="#" className="hover:text-[#FF0000]">Recognitions</a></li>
-                        <li><a href="#" className="hover:text-[#FF0000]">Careers</a></li>
-                        <li><a href="#" className="hover:text-[#FF0000]">Team</a></li>
+                    <h4 className="text-2xl font-semibold mb-5">Contact Us</h4>
+                    <ul className="space-y-2 text-base font-normal text-[#A9ABAA]">
+                        <li>
+                            <a href="#" className="hover:text-[#FF0000]">
+                                <span>Email: info</span><span className=' text-sm'>@</span><span>Kandolaenterprises.com</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" className="hover:text-[#FF0000]">Contact no: +1 (949) 431-6385</a>
+                        </li>
                     </ul>
                 </div>
-
-                {/* Contact Us */}
-                <div>
-                    <h4 className="text-2xl font-semibold mb-5" style={{ fontFamily: '"Poppins", sans-serif' }}>Contact Us</h4>
-                    <ul className="space-y-3 text-base font-normal text-[#A9ABAA]">
-                        <li><a href="#" className="hover:text-[#FF0000]"><span style={{ fontFamily: '"Poppins", sans-serif' }}>Email: info</span><span className='leading-tight text-sm'>@</span><span style={{ fontFamily: '"Cabin", sans-serif' }}>kandolaenterprises.com</span></a></li>
-                        <li><a href="#" className="hover:text-[#FF0000]" style={{ fontFamily: '"Poppins", sans-serif' }}>Contact no: +1 (949) 431-6385</a></li>
-                    </ul>
-                </div>
-
-                {/* Newsletter */}
-                <div className="sm:border-l sm:border-white/20 sm:pl-6 pt-8 sm:pt-0">
-                    <h4 className="text-2xl font-semibold mb-5" style={{ fontFamily: '"Poppins", sans-serif' }}>Subscribe to our newsletter</h4>
-                    <form className="flex flex-col gap-3 text-normal" style={{ fontFamily: '"Poppins", sans-serif' }}>
-                        <input
-                            type="email"
-                            placeholder="Enter your email"
-                            className="px-4 py-3 bg-gray-800 text-base text-white placeholder-gray-400 focus:outline-none"
-                        />
-                        <button
-                            type="submit"
-                            className="bg-white text-[#FF0000] hover:bg-[#FF0000] hover:text-white px-4 py-3 text-base font-medium transition-colors duration-300"
-                        >
-                            Subscribe
-                        </button>
-                    </form>
-                </div>
-
             </div>
 
             {/* Bottom Bar */}

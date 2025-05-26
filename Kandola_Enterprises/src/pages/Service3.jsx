@@ -1,12 +1,12 @@
 import React from "react";
-import bgImage from "../assets/images/capital1.jpg"; // Replace with your actual image path
+import bgImage from "../assets/images/funding.png"; // Replace with your actual image path
 
 const FundingSection = () => {
   return (
     <div className="w-full">
       {/* Background Image Only */}
       <div
-        className="h-[50vh] w-full"
+        className="h-[70vh] w-full"
         style={{
           backgroundImage: `url(${bgImage})`,
           backgroundSize: "cover",

@@ -1,12 +1,12 @@
 import React from "react";
-import bgImage from "../assets/images/digital1.jpg"; // Adjust the path accordingly
+import bgImage from "../assets/images/digital.png"; // Adjust the path accordingly
 
 const DigitalArchitectureSection = () => {
   return (
     <div className="w-full">
       {/* Background Image Only */}
       <div
-        className="h-[50vh] w-full"
+        className="h-[70vh] w-full"
         style={{
           backgroundImage: `url(${bgImage})`,
           backgroundSize: "cover",

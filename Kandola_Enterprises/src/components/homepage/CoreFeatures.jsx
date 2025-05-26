@@ -40,7 +40,7 @@ const CoreFeatures = () => {
       <div className="mb-8 max-w-5xl mx-auto px-4 sm:px-6 text-center sm:text-left">
   <p className="text-black font-normal  sm:text-lg lg:text-xl l" style={{ fontFamily: '"Poppins", sans-serif' }}>
     At Kandola enterprises, we believe every business—no matter its size or
-    industry—deserves the chance to succeed. Our Business Consulting services
+    industry—deserves the chance to succeed. Our Business Consulting solutions
     are built to empower entrepreneurs by opening doors to stronger financial
     opportunities. When you partner with us, you gain more than a service—you
     gain a committed ally focused on improving your business’s financial health,
